@@ -175,4 +175,52 @@ footer {
     .hero h2 {
         font-size: 2rem;
     }
+}
+
+.education-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.education-card h3 {
+    color: #0070f3;
+    margin-bottom: 0.5rem;
+}
+
+.education-card h4 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.education-card .date {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.education-details h5 {
+    color: #333;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.education-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.education-details li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.education-details li:before {
+    content: "•";
+    color: #0070f3;
+    position: absolute;
+    left: 0;
 } 
