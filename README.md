@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A simple, responsive portfolio website built with HTML, CSS, and JavaScript.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Responsive design
+- Smooth scrolling navigation
+- Contact form
+- Project showcase
+- Mobile-friendly layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This website is designed to be deployed on GitHub Pages. To deploy:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to the `main` branch of your repository
+2. Go to your repository settings on GitHub
+3. Navigate to the "Pages" section
+4. Under "Source", select "Deploy from a branch"
+5. Select the `main` branch
+6. Click "Save"
 
-## Learn More
+Your website will be available at `https://[your-username].github.io/[repository-name]`
 
-To learn more about Next.js, take a look at the following resources:
+## Local Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this website locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository
+2. Open `index.html` in your web browser
 
-## Deploy on Vercel
+## Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `index.html` - Main HTML file
+- `styles.css` - CSS styles
+- `script.js` - JavaScript functionality
+- `images/` - Directory containing website images
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+To customize this website:
+
+1. Update the content in `index.html`
+2. Modify styles in `styles.css`
+3. Add your own images to the `images/` directory
+4. Update the contact form handling in `script.js` if needed
