@@ -1,21 +1,22 @@
 name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-      - '.gitignore'
-      - 'README.md'
-      - 'LICENSE'
-      - '.github/**'
-      - 'node_modules/**'
-      - 'package-lock.json'
-      - 'yarn.lock'
-      - '.env*'
-      - '.DS_Store'
-      - '*.log'
+# Temporarily disabled GitHub Actions
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - '**.md'
+#       - '.gitignore'
+#       - 'README.md'
+#       - 'LICENSE'
+#       - '.github/**'
+#       - 'node_modules/**'
+#       - 'package-lock.json'
+#       - 'yarn.lock'
+#       - '.env*'
+#       - '.DS_Store'
+#       - '*.log'
 
 jobs:
   build-and-deploy:
