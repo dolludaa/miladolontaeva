@@ -99,20 +99,14 @@
                     </li>
                 </ul>
 
-                <h4>Data Structuring: Pivot-Friendly Format</h4>
-                <p>To facilitate analysis and flexible filtering in Tableau, I transformed the dataset into a long format using a pivot-style structure:</p>
+                <h4>Data Structuring for Analysis</h4>
+                <p>To compare multiple behavioral and academic factors across student mood groups, I reorganized the dataset into a long format. Each row represents a single response linked to one factor, such as academic pressure, study satisfaction, work hours, or financial stress.</p>
+                <p>Each factor was either:</p>
                 <ul>
-                    <li>Each row represents a single (student ID, attribute, value) tuple</li>
-                    <li>The Attribute column includes categories like Academic Pressure, Study Satisfaction, Work/Study Hours, and Financial Stress</li>
-                    <li>The Value column holds the corresponding numeric score</li>
+                    <li>Scored on a 0–5 scale (for pressure, satisfaction, and stress), or</li>
+                    <li>Recorded as numeric input (for study/work hours)</li>
                 </ul>
-                <p>This structure allowed me to:</p>
-                <ul>
-                    <li>Segment and compare specific variables side-by-side across mental health groups</li>
-                    <li>Use single-attribute filters in Tableau to dynamically explore how each factor varies</li>
-                    <li>Build consistent charts without manually reshaping wide data</li>
-                </ul>
-                <p>This pivot format made the dataset more reusable for grouped visual analytics and improved overall flexibility during the dashboard creation process.</p>
+                <p>This structure allowed me to calculate average values for each factor by mental state and visualize the results side-by-side in Tableau. It also made it easier to apply filters and groupings dynamically while keeping the dashboard structure clean and scalable.</p>
                 <img src="public/images/pivot_table.png" alt="Pivot Table Structure" class="pivot-table-image" loading="lazy">
 
                 <h4>Dual Dataset Strategy</h4>
