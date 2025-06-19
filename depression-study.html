@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depression Study - Project Details</title>
+    <title>Student Mental Health Analysis - Project Details</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,56 +22,224 @@
 
     <main>
         <section class="hero">
-            <h2>Depression Study</h2>
-            <p>Advanced analysis of depression patterns and risk factors</p>
+            <h2>Student Mental Health Analysis</h2>
+            <p>Understanding Depression Patterns in Academic Settings</p>
         </section>
 
         <section class="project-details">
             <div class="project-overview">
-                <h3>Project Overview</h3>
-                <p>This research project focuses on analyzing depression patterns and developing predictive models for early intervention. Using advanced statistical methods and machine learning techniques, we aim to identify key indicators that can help in early detection and treatment of depression.</p>
-            </div>
+                <h3>TL;DR</h3>
+                <p>I analyzed a CSV dataset of 27,901 student responses to explore which academic, lifestyle, and psychological factors correlate most strongly with self-reported depression.</p>
 
-            <div class="project-methodology">
-                <h3>Methodology</h3>
+                <h4>My process:</h4>
                 <ul>
-                    <li>Data Collection: Comprehensive dataset from multiple healthcare institutions</li>
-                    <li>Analysis Tools: Python, R, and specialized statistical software</li>
-                    <li>Machine Learning Models: Random Forest, Neural Networks, and Time Series Analysis</li>
-                    <li>Validation: Cross-validation and external dataset testing</li>
+                    <li>Cleaned mislabeled and inconsistent city entries in Excel</li>
+                    <li>Removed invalid responses and non-geographic data</li>
+                    <li>Focused on key variables: academic pressure, satisfaction, sleep, suicidal thoughts</li>
+                    <li>Visualized key insights in Tableau dashboards</li>
+                </ul>
+
+                <h4>Key findings:</h4>
+                <ul>
+                    <li>Depressed students are not disengaged — they're overloaded and emotionally burned out</li>
+                    <li>50% of depressed students reported suicidal thoughts vs. 13% in the non-depressed group</li>
+                    <li>Sleep extremes (<5h or >8h) and unhealthy diets are more common in the depressed group</li>
+                    <li>Gender shows no major effect, while city-level variation suggests location-specific stress</li>
                 </ul>
             </div>
 
-            <div class="project-findings">
-                <h3>Key Findings</h3>
-                <ul>
-                    <li>Identified significant correlation between lifestyle factors and depression onset</li>
-                    <li>Developed predictive model with 85% accuracy in early detection</li>
-                    <li>Created risk assessment framework for healthcare professionals</li>
-                    <li>Established patterns in seasonal variations of depression symptoms</li>
+            <div class="tableau-button-container">
+                <a href="https://public.tableau.com/app/profile/liudmila.dolontaeva/viz/DepressionDataAnalysis/Story1" target="_blank" class="tableau-button">
+                    <i class="fas fa-chart-bar"></i> Check out the project on Tableau Public
+                </a>
+            </div>
+
+            <div style="text-align: center; margin: 2rem 0;">
+                <img src="public/images/overviews.png" alt="Project Overview" class="overview-image" loading="lazy">
+            </div>
+
+            <div class="analysis-section about-project">
+                <h3>About the Project</h3>
+                <p>This project stood out to me because I've long been interested in how academic and emotional pressure affect students, especially in fast-paced environments.</p>
+                <p>When I came across this publicly available dataset of nearly 28,000 student mental health responses, I saw an opportunity to explore those stress patterns through data.</p>
+
+                <p>I wasn't aiming to build a predictive model — my goal was to find clear, interpretable signals of depression: emotional, behavioral, environmental.<br>
+                Visual storytelling helped turn raw CSV data into structured insight, allowing me to highlight risk areas that could guide awareness or future intervention.</p>
+
+                <h4>I followed a six-step analytical workflow:</h4>
+                <ul class="workflow-steps">
+                    <li>Ask</li>
+                    <li>Prepare</li>
+                    <li>Clean</li>
+                    <li>Analyze</li>
+                    <li>Share</li>
+                    <li>Conclude</li>
                 </ul>
             </div>
 
-            <div class="project-impact">
-                <h3>Impact</h3>
+            <div class="analysis-section">
+                <h3>1. Ask</h3>
+                <p>What measurable factors distinguish depressed students from non-depressed ones?</p>
+                <p>The central goal was to surface which academic conditions, habits, or psychological traits are consistently associated with reported depression — not just correlations, but patterns strong enough to inform action.</p>
+            </div>
+
+            <div class="analysis-section">
+                <h3>2. Prepare & Clean</h3>
+                <h4>Dataset Overview</h4>
                 <ul>
-                    <li>Improved early detection rates by 40%</li>
-                    <li>Reduced time to diagnosis by 60%</li>
-                    <li>Enhanced treatment planning efficiency</li>
-                    <li>Contributed to development of new intervention strategies</li>
+                    <li>27,901 records from anonymized student surveys</li>
+                    <li>Key fields included:
+                        <ul>
+                            <li>Demographics: gender, city</li>
+                            <li>Academic: CGPA, pressure (1–5), satisfaction (1–5)</li>
+                            <li>Lifestyle: daily study/work hours, sleep range, diet type</li>
+                            <li>Psychological: suicidal thoughts, family mental illness</li>
+                            <li>Target label: Depression_Status (Depressed / Not Depressed)</li>
+                        </ul>
+                    </li>
                 </ul>
+
+                <h4>Data Structuring: Pivot-Friendly Format</h4>
+                <p>To facilitate analysis and flexible filtering in Tableau, I transformed the dataset into a long format using a pivot-style structure:</p>
+                <ul>
+                    <li>Each row represents a single (student ID, attribute, value) tuple</li>
+                    <li>The Attribute column includes categories like Academic Pressure, Study Satisfaction, Work/Study Hours, and Financial Stress</li>
+                    <li>The Value column holds the corresponding numeric score</li>
+                </ul>
+                <p>This structure allowed me to:</p>
+                <ul>
+                    <li>Segment and compare specific variables side-by-side across mental health groups</li>
+                    <li>Use single-attribute filters in Tableau to dynamically explore how each factor varies</li>
+                    <li>Build consistent charts without manually reshaping wide data</li>
+                </ul>
+                <p>This pivot format made the dataset more reusable for grouped visual analytics and improved overall flexibility during the dashboard creation process.</p>
+                <img src="public/images/pivot_table.png" alt="Pivot Table Structure" class="pivot-table-image" loading="lazy">
+
+                <h4>Dual Dataset Strategy</h4>
+                <p>While the pivoted dataset was optimal for factor-based comparisons, some analyses required student-level records in a wide format — with each attribute in its own column.</p>
+                <p>To address this, I maintained two separate versions of the data:</p>
+                <ul>
+                    <li>Wide format: used for gender-based distributions, depression breakdowns, and lifestyle comparisons (e.g., sleep, diet)</li>
+                    <li>Long format: used for analyzing stress-related academic attributes with grouped bar charts</li>
+                </ul>
+                <p>This dual-format setup gave me flexibility in Tableau — ensuring each insight used the most suitable structure, without compromising clarity or visual integrity.</p>
+                <img src="public/images/data_set.png" alt="Dual Dataset Structure" class="pivot-table-image" loading="lazy">
+
+                <h4>Cleaning Steps</h4>
+                <ul>
+                    <li>City cleanup:
+                        <p>To ensure reliable geographic analysis, I created a reference list of valid Indian cities. Using Excel formulas (TRIM, LOWER, COUNTIF), I normalized all city entries and compared them against the official list. Non-matching values — including personal names, degrees, or invalid strings — were flagged as "Unrecognized" and excluded from geographic visualizations.</p>
+                        <img src="public/images/cleaned_cities.png" alt="City Cleanup Process" class="cleaned-cities-image" loading="lazy">
+                    </li>
+                    <li>Zero-variance columns:
+                        <p>Two fields (Job Satisfaction, Work Pressure) contained only zero values. These were excluded.</p>
+                    </li>
+                    <li>Category normalization:
+                        <p>Sleep durations like "<5 hours", ">8 hours", and diet labels like "moderate" or "unhealthy" were normalized to use consistent phrasing. This ensured categorical filters worked correctly in Tableau.</p>
+                    </li>
+                    <li>Partial records:
+                        <p>For each visualization, I included only rows with complete values for the variables being compared.</p>
+                    </li>
+                </ul>
+
+                <h4>Tools used:</h4>
+                <ul>
+                    <li>Excel for cleaning</li>
+                    <li>Tableau for visualization</li>
+                </ul>
+            </div>
+
+            <div class="analysis-section">
+                <h3>3. Insights — What the Data Shows</h3>
+                
+                <div class="insight-card">
+                    <h4>Depressed students are academically engaged — but overwhelmed</h4>
+                    <ul>
+                        <li>Academic pressure: 3.7 vs 2.4 (Depressed vs Happy)</li>
+                        <li>Work/study time: 7.8 vs 6.2 hours/day</li>
+                        <li>Study satisfaction: lower in the depressed group</li>
+                    </ul>
+                    <p>Interpretation: Depressed students put in more effort but feel it doesn't pay off. The pattern reflects burnout, not disengagement.</p>
+                    <img src="public/images/work_study_hour.png" alt="Work/Study Hours Comparison" class="insight-image" loading="lazy">
+                </div>
+
+                <div class="insight-card">
+                    <h4>Sleep patterns are a visible red flag</h4>
+                    <ul>
+                        <li>Students with <5h or >8h of sleep are more likely to be depressed</li>
+                        <li>Non-depressed students are concentrated in the 6–8h range</li>
+                    </ul>
+                    <p>Interpretation: Irregular sleep is a strong behavioral indicator of internal imbalance.</p>
+                    <img src="public/images/sleep_duration.png" alt="Sleep Duration Patterns" class="insight-image" loading="lazy">
+                </div>
+
+                <div class="insight-card">
+                    <h4>Psychological indicators dominate</h4>
+                    <ul>
+                        <li>Suicidal thoughts: 50% in the depressed group, 13% in the non-depressed group</li>
+                        <li>Family mental illness: 51% vs 45%</li>
+                    </ul>
+                    <p>Interpretation: These variables show the strongest contrast and are key risk flags.</p>
+                    <img src="public/images/mental_illness.png" alt="Mental Health Indicators" class="insight-image" loading="lazy">
+                </div>
+
+                <div class="insight-card">
+                    <h4>No significant gender difference</h4>
+                    <p>Gender distribution was identical in both groups: 56% male, 44% female</p>
+                    <p>Interpretation: Gender did not affect reported depression in this dataset.</p>
+                    <img src="public/images/gender.png" alt="Gender Distribution Analysis" class="insight-image" loading="lazy">
+                </div>
+
+                <div class="insight-card">
+                    <h4>Geography matters</h4>
+                    <p>Depression rates ranged by city: from 52% in Jaipur to 67% in Hyderabad and Ahmedabad</p>
+                    <p>Interpretation: City-level differences likely reflect academic intensity, social environment, or access to support.</p>
+                    <img src="public/images/geography.png" alt="Geographic Depression Analysis" class="insight-image" loading="lazy">
+                </div>
+
+                <div class="insight-card">
+                    <h4>Diet shows weak correlation</h4>
+                    <p>Unhealthy diet more common in depressed students (26% vs 11%)</p>
+                    <p>Interpretation: The signal exists but is weaker. Diet likely reflects disruption rather than a primary cause.</p>
+                    <img src="public/images/deitry.png" alt="Diet Correlation Analysis" class="insight-image" loading="lazy">
+                </div>
+            </div>
+
+            <div class="analysis-section">
+                <h3>4. Share (Tableau)</h3>
+                <p>I built a multi-part Tableau story, with dashboards structured around:</p>
+                <ul>
+                    <li>Overview: depression rate and gender breakdown</li>
+                    <li>Academic Load: pressure, hours, satisfaction</li>
+                    <li>Mental Risk Factors: suicidal thoughts, family history</li>
+                    <li>Sleep & Diet: behavioral variables</li>
+                    <li>City View: mapped depression rates by location</li>
+                    <li>Gender Comparison: focused gender analysis</li>
+                </ul>
+                <p>Design was centered on clarity and comparability. Every visualization includes contextual labels and consistent formatting.</p>
+            </div>
+
+            <div class="analysis-section">
+                <h3>5. Conclusion</h3>
+                <p>This dataset reveals a clear profile of students at higher risk of depression:</p>
+                <ul>
+                    <li>Under heavy academic pressure</li>
+                    <li>Working long hours</li>
+                    <li>Experiencing disrupted or extreme sleep</li>
+                    <li>Reporting psychological risk factors</li>
+                    <li>Living in regions with elevated systemic stress</li>
+                </ul>
+                <p>These are not subtle trends — they are measurable patterns visible across thousands of records.</p>
+                <p>The project demonstrates how structured visual analysis can surface real-world mental health risks and support better decision-making in academic environments.</p>
             </div>
 
             <div class="project-technologies">
                 <h3>Technologies Used</h3>
                 <div class="tags">
-                    <span>Python</span>
-                    <span>R</span>
-                    <span>TensorFlow</span>
-                    <span>Scikit-learn</span>
-                    <span>Pandas</span>
-                    <span>NumPy</span>
+                    <span>Excel</span>
                     <span>Tableau</span>
+                    <span>Data Analysis</span>
+                    <span>Data Visualization</span>
                 </div>
             </div>
 

@@ -18,6 +18,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    font-size: 14px;
 }
 
 header {
@@ -51,7 +52,7 @@ nav h1 {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -188,30 +189,36 @@ footer {
 }
 
 .project-details {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 1400px;
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
 }
 
 .project-details h3 {
     color: var(--text-color);
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.project-details h4 {
+    font-size: 1.1rem;
+    margin: 1.2rem 0 0.6rem;
 }
 
 .project-details p {
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    font-size: 14px;
 }
 
 .project-details ul {
-    list-style-position: inside;
-    margin: 1rem 0;
+    margin: 0.6rem 0;
 }
 
 .project-details li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 .back-link {
@@ -225,4 +232,312 @@ footer {
 
 .back-link:hover {
     color: var(--accent-color);
+}
+
+.analysis-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.analysis-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.analysis-section h4 {
+    color: #34495e;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.insight-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.insight-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.insight-image {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+.overview-image {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    object-fit: cover;
+    object-position: 0 -5px;
+}
+
+.pivot-table-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 1rem auto;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cleaned-cities-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+.visualization-container {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.visualization-container iframe {
+    border-radius: 4px;
+}
+
+.insight-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.6rem 0;
+}
+
+.insight-card ul li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.insight-card ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.project-overview {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.project-overview p,
+.analysis-section p,
+.insight-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #2c3e50;
+    max-width: 100ch;
+    margin: 1rem 0;
+}
+
+.project-overview ul,
+.analysis-section ul,
+.insight-card ul {
+    padding-left: 1.5rem;
+    margin: 0.6rem 0;
+}
+
+.project-overview li,
+.analysis-section li,
+.insight-card li {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.project-overview h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.project-overview h4 {
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.8rem;
+    color: #34495e;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.tags span {
+    background: #e9ecef;
+    color: #495057;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #2980b9;
+}
+
+@media (max-width: 1200px) {
+    .project-details {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .project-overview,
+    .analysis-section,
+    .insight-card {
+        padding: 1.5rem;
+    }
+
+    .visualization-container {
+        padding: 0.5rem;
+    }
+
+    .visualization-container iframe {
+        height: 400px;
+    }
+
+    .project-overview p,
+    .analysis-section p,
+    .insight-card p,
+    .project-overview li,
+    .analysis-section li,
+    .insight-card li {
+        font-size: 0.9rem;
+    }
+
+    .analysis-section h3,
+    .project-overview h3 {
+        font-size: 1.4rem;
+    }
+
+    .analysis-section h4,
+    .project-overview h4,
+    .insight-card h4 {
+        font-size: 1.05rem;
+    }
+}
+
+.tableau-button-container {
+    width: 100%;
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 0.5rem 0;
+}
+
+.tableau-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tableau-button:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tableau-button i {
+    margin-right: 0.8rem;
+}
+
+.workflow-steps {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.workflow-steps li {
+    background: #f8f9fa;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    color: #2c3e50;
+    font-weight: 500;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.workflow-steps li:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .workflow-steps {
+        gap: 0.8rem;
+    }
+    
+    .workflow-steps li {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.about-project {
+    background: #ffffff;
+    border-left: 4px solid #3498db;
+    margin-top: 3rem;
+}
+
+.about-project h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.about-project p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
 } 
