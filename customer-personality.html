@@ -37,14 +37,6 @@
                     <li><strong>Purchase & Channel Behavior</strong></li>
                     <li><strong>High-Value Segment Deep Dive</strong></li>
                 </ul>
-
-                <h4>Key findings:</h4>
-                <ul>
-                    <li>Customers with no children consistently spend more than other groups, averaging over $1,000 per person</li>
-                    <li>Wine is the highest-value product: $680,816 total revenue and $304 per customer — more than 11× the spend on sweets or fruits</li>
-                    <li>Web channel is the most stable over time, maintaining average purchases across recency groups</li>
-                    <li>Households without kids are the most responsive to campaigns and more likely to buy premium categories</li>
-                </ul>
             </div>
 
             <div class="tableau-button-container">
@@ -53,24 +45,32 @@
                 </a>
             </div>
 
-            <div class="analysis-section about-project">
-                <h3>About the Project</h3>
-                <p>This project stood out to me because I wanted to understand how customer demographics and behavior patterns influence purchasing decisions and marketing effectiveness.</p>
-                <p>When I came across this customer dataset, I saw an opportunity to explore segmentation strategies through data analysis and identify high-value customer groups.</p>
+            <div class="analysis-section">
+                <h3>Key Insights and Recommendations</h3>
+                
+                <h4>Customer Value and Segments</h4>
+                <ul>
+                    <li><strong>Customers with no children consistently spend more</strong> than other groups, averaging over $1,000 per person.</li>
+                    <li><strong>Households without kids are the most responsive</strong> to campaigns and more likely to buy premium categories (wine, meat, gold).</li>
+                </ul>
 
-                <p>My goal was to find clear, actionable insights about customer behavior: spending patterns, channel preferences, and demographic influences.<br>
-                Visual storytelling in Tableau helped turn raw customer data into structured insights, allowing me to highlight segments that could guide marketing strategy and customer engagement.</p>
+                <h4>Product Strategy</h4>
+                <ul>
+                    <li><strong>Wine is the highest-value product:</strong> $680,816 total revenue and $304 per customer — more than 11× the spend on sweets or fruits.</li>
+                    <li><strong>Gold has lower volume but shows strong value per buyer,</strong> making it ideal for targeted promotions.</li>
+                </ul>
 
-                <h4>I followed a structured analytical workflow:</h4>
-                <ul class="workflow-steps">
-                    <li>Understanding the Business Task</li>
-                    <li>Data Preparation and Cleaning</li>
-                    <li>Data Analysis and Visualization</li>
+                <h4>Channel Performance</h4>
+                <ul>
+                    <li><strong>Web channel is the most stable over time,</strong> maintaining average purchases across recency groups.</li>
+                    <li><strong>Store dominates in volume but decays faster</strong> in retention, while Catalog shows sharp drop-off.</li>
                 </ul>
             </div>
 
             <div class="analysis-section">
-                <h3>1. Understanding the Business Task</h3>
+                <h3>Analytical Process</h3>
+                
+                <h4>1. Understanding the Business Task</h4>
                 <p>The main business objectives were:</p>
                 <ul>
                     <li>Identify high-spending and high-response customer segments</li>
@@ -85,14 +85,12 @@
                     <li>Which channels deliver consistent engagement?</li>
                     <li>What product categories yield highest revenue per user?</li>
                 </ul>
-            </div>
 
-            <div class="analysis-section">
-                <h3>2. Data Preparation and Cleaning</h3>
+                <h4>2. Data Preparation and Cleaning</h4>
                 <p>The dataset included demographics, campaign response, product spend, and transactional info.</p>
                 <p><strong>I performed all data cleaning and structuring in Excel before loading into Tableau.</strong></p>
                 
-                <h4>Key cleaning steps:</h4>
+                <p><strong>Key cleaning steps:</strong></p>
                 <ul>
                     <li>Merged child/teen counts into a single "Family Type" column</li>
                     <li>Created three family segments: Full Family, Small Family, No Kids</li>
@@ -102,79 +100,53 @@
                     <li>Aggregated 6 campaign response flags into a simplified "Response" field</li>
                 </ul>
 
-                <h4>Tools used:</h4>
-                <ul>
-                    <li>Excel for cleaning</li>
-                    <li>Tableau for visualization</li>
-                </ul>
-            </div>
-
-            <div class="analysis-section">
-                <h3>3. Data Analysis and Visualization</h3>
+                <h4>3. Data Analysis and Visualization</h4>
                 <p>Once cleaned, I imported the dataset into Tableau and built a story containing three dashboards:</p>
                 
-                <div class="insight-card">
-                    <h4>1. Segment Overview</h4>
-                    <p>This dashboard introduced core distributions:</p>
-                    <ul>
-                        <li>Marital status and age (most customers are 40–65; high response in 25–35 and 70+)</li>
-                        <li>Education vs. Income (PhD and Master's have higher income and stronger campaign acceptance)</li>
-                        <li>Family Type split: Small Families (50%) dominate volume; No Kids (28%) dominate spend</li>
-                    </ul>
-                </div>
-                
-                <div class="insight-card">
-                    <h4>2. Purchase & Channel Behavior</h4>
-                    <p>Here I focused on how segments behave:</p>
-                    
-                    <p><strong>Spending by Product:</strong></p>
-                    <ul>
-                        <li>Wine leads with $680,816 in total sales</li>
-                        <li>Meat is second with $373,968 and $167 per user</li>
-                        <li>Gold shows premium potential ($44/user on average)</li>
-                    </ul>
-                    
-                    <p><strong>Channel Use & Recency:</strong></p>
-                    <ul>
-                        <li>Web shows stable purchase patterns across all recency buckets</li>
-                        <li>Store has 42% more transactions than Web, but is more sensitive to recency</li>
-                        <li>Catalog fades quickly, suggesting low retention</li>
-                    </ul>
-                    
-                    <p><strong>Frequency:</strong></p>
-                    <ul>
-                        <li>65% of users made 10 or fewer purchases</li>
-                        <li>Frequent buyers (>20 purchases) are under 7% of base</li>
-                    </ul>
-                </div>
-                
-                <div class="insight-card">
-                    <h4>3. High-Value Segment Deep Dive</h4>
-                    <p>This dashboard isolates "No Kids" as the most valuable segment:</p>
-                    <ul>
-                        <li>Avg. spend: $1,097</li>
-                        <li>Highest response rate</li>
-                        <li>Strongest use of Web + Store</li>
-                        <li>Preference for wine ($487 avg.) and meat ($373)</li>
-                    </ul>
-                    <p>Full Families spent the least (~$500) and leaned toward fish, sweets, and offline channels.</p>
-                </div>
-            </div>
-
-            <div class="analysis-section">
-                <h3>4. Share (Tableau)</h3>
-                <p>I built a comprehensive Tableau story, with dashboards structured around:</p>
+                <h5><strong>1. Segment Overview</strong></h5>
+                <p>This dashboard introduced core distributions:</p>
                 <ul>
-                    <li>Customer segmentation overview and demographics</li>
-                    <li>Product performance and spending patterns</li>
-                    <li>Channel behavior and customer recency analysis</li>
-                    <li>High-value segment deep dive and characteristics</li>
+                    <li>Marital status and age (most customers are 40–65; high response in 25–35 and 70+)</li>
+                    <li>Education vs. Income (PhD and Master's have higher income and stronger campaign acceptance)</li>
+                    <li>Family Type split: Small Families (50%) dominate volume; No Kids (28%) dominate spend.</li>
                 </ul>
-                <p>Design was centered on clarity and actionable insights. Every visualization includes contextual labels and consistent formatting to support business decision-making.</p>
+                
+                <h5><strong>2. Purchase & Channel Behavior</strong></h5>
+                <p>Here I focused on how segments behave:</p>
+                
+                <p><strong>Spending by Product:</strong></p>
+                <ul>
+                    <li>Wine leads with $680,816 in total sales</li>
+                    <li>Meat is second with $373,968 and $167 per user</li>
+                    <li>Gold shows premium potential ($44/user on average)</li>
+                </ul>
+                
+                <p><strong>Channel Use & Recency:</strong></p>
+                <ul>
+                    <li>Web shows stable purchase patterns across all recency buckets</li>
+                    <li>Store has 42% more transactions than Web, but is more sensitive to recency</li>
+                    <li>Catalog fades quickly, suggesting low retention</li>
+                </ul>
+                
+                <p><strong>Frequency:</strong></p>
+                <ul>
+                    <li>65% of users made 10 or fewer purchases</li>
+                    <li>Frequent buyers (>20 purchases) are under 7% of base</li>
+                </ul>
+                
+                <h5><strong>3. High-Value Segment Deep Dive</strong></h5>
+                <p>This dashboard isolates "No Kids" as the most valuable segment:</p>
+                <ul>
+                    <li>Avg. spend: $1,097</li>
+                    <li>Highest response rate</li>
+                    <li>Strongest use of Web + Store</li>
+                    <li>Preference for wine ($487 avg.) and meat ($373)</li>
+                </ul>
+                <p>Full Families spent the least (~$500) and leaned toward fish, sweets, and offline channels.</p>
             </div>
 
             <div class="analysis-section">
-                <h3>5. Conclusion</h3>
+                <h3>Conclusion</h3>
                 <p>This project demonstrates that <strong>customer value is not spread evenly — it's concentrated in specific structural segments.</strong> Notably, households without children deliver higher revenue, stronger marketing response, and more consistent behavior over time.</p>
                 
                 <h4>Recommendations:</h4>
