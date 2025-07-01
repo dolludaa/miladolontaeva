@@ -446,6 +446,8 @@ main {
     object-fit: cover;
     object-position: top;
     border-radius: 8px;
+    display: block;
+    background: white;
 }
 
 .zoom-overlay {

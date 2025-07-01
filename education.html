@@ -76,10 +76,23 @@
             
             <div class="certificates-grid">
                 <div class="certificate-card">
-                    <div class="certificate-image" onclick="openModal('public/images/linkedin.pdf')">
-                        <iframe src="public/images/linkedin.pdf" width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+                    <div class="certificate-image" onclick="window.open('public/images/linkedin.pdf', '_blank')">
+                        <div class="certificate-preview linkedin-cert">
+                            <div class="cert-header">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn Learning</span>
+                            </div>
+                            <div class="cert-body">
+                                <h4>Excel 2016: Advanced Formulas and Functions</h4>
+                                <p>Course completed by Mila Dolontaeva</p>
+                                <p class="cert-date">Apr 18, 2020</p>
+                                <div class="cert-footer">
+                                    <i class="fab fa-linkedin cert-logo"></i>
+                                </div>
+                            </div>
+                        </div>
                         <div class="zoom-overlay">
-                            <i class="fas fa-search-plus"></i>
+                            <i class="fas fa-external-link-alt"></i>
                         </div>
                     </div>
                     <div class="certificate-header">
@@ -99,10 +112,23 @@
                 </div>
 
                 <div class="certificate-card">
-                    <div class="certificate-image" onclick="openModal('public/images/excel.pdf')">
-                        <iframe src="public/images/excel.pdf" width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+                    <div class="certificate-image" onclick="window.open('public/images/excel.pdf', '_blank')">
+                        <div class="certificate-preview excel-cert">
+                            <div class="cert-header">
+                                <i class="fas fa-file-excel"></i>
+                                <span>ExcelExercises.com</span>
+                            </div>
+                            <div class="cert-body">
+                                <h4>Liudmila Dolontaeva<br/>in Excel Proficiency</h4>
+                                <p class="cert-credential">Credential: 147F899350MF2MAhJlfaVE299q1</p>
+                                <p class="cert-date">Issue Date: May 3, 2025</p>
+                                <div class="cert-footer">
+                                    <i class="fas fa-trophy cert-seal"></i>
+                                </div>
+                            </div>
+                        </div>
                         <div class="zoom-overlay">
-                            <i class="fas fa-search-plus"></i>
+                            <i class="fas fa-external-link-alt"></i>
                         </div>
                     </div>
                     <div class="certificate-header">
@@ -154,45 +180,6 @@
         <p>© 2024 Ludmila Dolontaeva. All rights reserved.</p>
     </footer>
 
-    <!-- Modal for certificate viewing -->
-    <div id="certificateModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <iframe id="modalFrame" src="" width="100%" height="600px"></iframe>
-        </div>
-    </div>
 
-    <script>
-        function openModal(src) {
-            const modal = document.getElementById('certificateModal');
-            const frame = document.getElementById('modalFrame');
-            frame.src = src;
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('certificateModal');
-            const frame = document.getElementById('modalFrame');
-            modal.style.display = 'none';
-            frame.src = '';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('certificateModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
 </body>
 </html> 
