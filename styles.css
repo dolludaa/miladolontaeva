@@ -314,6 +314,14 @@ footer {
     display: block;
 }
 
+.family-type-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
 .visualization-container {
     margin: 1.5rem 0;
     padding: 1rem;
