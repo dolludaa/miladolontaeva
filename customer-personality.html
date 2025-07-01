@@ -26,123 +26,160 @@
             
             <div class="hero">
                 <h2>Customer Personality Analysis</h2>
-                <p>Comprehensive analysis of customer behavior patterns and personality traits to drive targeted marketing strategies</p>
+                <p>Behavioral and demographic analysis to identify value-driving segments and inform marketing strategies</p>
             </div>
 
             <div class="project-overview">
                 <div class="analysis-section">
-                    <h3>🎯 TL;DR & Key Findings</h3>
+                    <h3>🎯 TL;DR</h3>
                     <div class="insight-card">
-                        <p><strong>Customer Segmentation Insights:</strong> Through comprehensive analysis of customer data, we identified distinct personality clusters that significantly impact purchasing behavior. High-income customers with graduate degrees show 40% higher spending on premium products, while customers with children demonstrate different channel preferences for marketing campaigns.</p>
+                        <p>In this project, I conducted a behavioral and demographic analysis based on customer data from a retail business. The goal was to identify value-driving segments, understand product/channel performance, and inform marketing and engagement strategies. The final Tableau story included three dashboards:</p>
                         
-                        <h4>💡 Key Insights:</h4>
                         <ul>
-                            <li><strong>Income Impact:</strong> Customers earning $80K+ spend 3x more on wine and premium products</li>
-                            <li><strong>Education Correlation:</strong> Graduate degree holders show 25% higher catalog purchase rates</li>
-                            <li><strong>Family Dynamics:</strong> Customers with teenagers at home prefer online channels (60% vs 35%)</li>
-                            <li><strong>Campaign Response:</strong> Personalized campaigns based on personality clusters achieved 18% higher conversion rates</li>
+                            <li><strong>Segment Overview</strong></li>
+                            <li><strong>Purchase & Channel Behavior</strong></li>
+                            <li><strong>High-Value Segment Deep Dive</strong></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="analysis-section">
-                    <h3>📊 Analysis Overview</h3>
-                    <div class="insight-card">
-                        <p>This project analyzes customer personality data to understand purchasing patterns, preferred marketing channels, and response rates to different campaign types. The analysis combines demographic data with behavioral metrics to create actionable customer segments.</p>
-                        
-                        <h4>🔍 Dataset Highlights:</h4>
-                        <ul>
-                            <li><strong>Sample Size:</strong> 2,240 customer records</li>
-                            <li><strong>Variables:</strong> 29 features including demographics, spending patterns, and campaign responses</li>
-                            <li><strong>Time Period:</strong> 2-year customer journey analysis</li>
-                            <li><strong>Categories:</strong> Wine, Meat, Fish, Sweets, Gold, and Fruits purchases</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="analysis-section">
-                    <h3>🛠️ About the Project</h3>
-                    <div class="insight-card">
-                        <p>This comprehensive customer personality analysis project demonstrates advanced data science techniques applied to marketing analytics. The project showcases end-to-end analytical workflow from data preprocessing to actionable business insights.</p>
-                        
-                        <h4>📋 Analytical Workflow:</h4>
-                        <ol class="workflow-steps">
-                            <li><strong>Data Collection & Validation:</strong> Imported customer dataset and performed initial data quality assessment</li>
-                            <li><strong>Exploratory Data Analysis:</strong> Conducted comprehensive EDA to understand distributions and relationships</li>
-                            <li><strong>Feature Engineering:</strong> Created derived metrics like customer lifetime value and purchase frequency</li>
-                            <li><strong>Customer Segmentation:</strong> Applied clustering algorithms to identify distinct customer groups</li>
-                            <li><strong>Behavioral Analysis:</strong> Analyzed spending patterns across different product categories and channels</li>
-                            <li><strong>Campaign Performance:</strong> Evaluated marketing campaign effectiveness across customer segments</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="analysis-section">
-                    <h3>📈 Key Insights & Findings</h3>
+                    <h3>💡 Key Insights and Recommendations</h3>
                     
                     <div class="insight-card">
-                        <h4>💰 Spending Behavior Analysis</h4>
-                        <p>Analysis reveals distinct spending patterns across customer segments. High-value customers concentrate spending on wine and meat products, while budget-conscious segments prefer fruits and sweets.</p>
-                        
-                        <div class="visualization-container">
-                            <img src="public/images/spending-analysis.png" alt="Customer Spending Analysis" class="insight-image">
-                        </div>
+                        <h4>👨‍👩‍👧‍👦 Customer Value and Segments</h4>
+                        <ul>
+                            <li><strong>Customers with no children consistently spend more</strong> than other groups, averaging over $1,000 per person.</li>
+                            <li><strong>Households without kids are the most responsive</strong> to campaigns and more likely to buy premium categories (wine, meat, gold).</li>
+                        </ul>
                     </div>
 
                     <div class="insight-card">
-                        <h4>🎓 Education & Income Correlation</h4>
-                        <p>Strong correlation between education level and purchasing power. Graduate degree holders show significantly higher catalog purchase rates and premium product preferences.</p>
-                        
-                        <div class="visualization-container">
-                            <img src="public/images/education-income.png" alt="Education vs Income Analysis" class="insight-image">
-                        </div>
+                        <h4>🍷 Product Strategy</h4>
+                        <ul>
+                            <li><strong>Wine is the highest-value product:</strong> $680,816 total revenue and $304 per customer — more than 11× the spend on sweets or fruits.</li>
+                            <li><strong>Gold has lower volume but shows strong value per buyer,</strong> making it ideal for targeted promotions.</li>
+                        </ul>
                     </div>
 
                     <div class="insight-card">
-                        <h4>👨‍👩‍👧‍👦 Family Structure Impact</h4>
-                        <p>Family composition significantly influences channel preferences and product categories. Customers with children show different shopping behaviors compared to single customers.</p>
-                        
-                        <div class="visualization-container">
-                            <img src="public/images/family-analysis.png" alt="Family Structure Analysis" class="insight-image">
-                        </div>
-                    </div>
-
-                    <div class="insight-card">
-                        <h4>🎯 Campaign Response Optimization</h4>
-                        <p>Personalized campaigns based on customer personality clusters achieved significantly higher response rates. Targeted approach improved conversion by 18% compared to generic campaigns.</p>
-                        
-                        <div class="visualization-container">
-                            <img src="public/images/campaign-response.png" alt="Campaign Response Analysis" class="insight-image">
-                        </div>
+                        <h4>📱 Channel Performance</h4>
+                        <ul>
+                            <li><strong>Web channel is the most stable over time,</strong> maintaining average purchases across recency groups.</li>
+                            <li><strong>Store dominates in volume but decays faster</strong> in retention, while Catalog shows sharp drop-off.</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="analysis-section">
-                    <h3>🎯 Business Impact & Recommendations</h3>
+                    <h3>🛠️ Analytical Process</h3>
+                    
                     <div class="insight-card">
-                        <p>Based on the comprehensive customer personality analysis, the following strategic recommendations were developed to optimize marketing effectiveness and customer engagement:</p>
-                        
-                        <h4>📊 Strategic Recommendations:</h4>
+                        <h4>1. Understanding the Business Task</h4>
+                        <p>The main business objectives were:</p>
                         <ul>
-                            <li><strong>Segment-Based Targeting:</strong> Implement differentiated marketing strategies for each customer cluster to improve campaign ROI by an estimated 25%</li>
-                            <li><strong>Channel Optimization:</strong> Prioritize catalog marketing for high-education customers and digital channels for families with teenagers</li>
-                            <li><strong>Product Positioning:</strong> Focus premium product promotions on high-income segments while developing value propositions for price-sensitive customers</li>
-                            <li><strong>Personalization Engine:</strong> Develop automated recommendation system based on personality traits and purchase history</li>
+                            <li>Identify high-spending and high-response customer segments</li>
+                            <li>Understand how demographic traits influence behavior</li>
+                            <li>Connect product/channel trends to segment structure</li>
                         </ul>
                         
-                        <p><strong>Expected Business Impact:</strong> Implementation of these recommendations is projected to increase customer lifetime value by 20% and improve marketing campaign effectiveness by 18% within the first year.</p>
+                        <p><strong>Guiding questions:</strong></p>
+                        <ul>
+                            <li>Who are our highest-value customers?</li>
+                            <li>How does family size impact product mix?</li>
+                            <li>Which channels deliver consistent engagement?</li>
+                            <li>What product categories yield highest revenue per user?</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight-card">
+                        <h4>2. Data Preparation and Cleaning</h4>
+                        <p>The dataset included demographics, campaign response, product spend, and transactional info.</p>
+                        <p><strong>I performed all data cleaning and structuring in Excel before loading into Tableau.</strong></p>
+                        
+                        <p><strong>Key cleaning steps:</strong></p>
+                        <ul>
+                            <li>Merged child/teen counts into a single "Family Type" column</li>
+                            <li>Created three family segments: Full Family, Small Family, No Kids</li>
+                            <li>Grouped birth years into age bins</li>
+                            <li>Unified education and marital status categories</li>
+                            <li>Removed customers with $0 spend</li>
+                            <li>Aggregated 6 campaign response flags into a simplified "Response" field</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight-card">
+                        <h4>3. Data Analysis and Visualization</h4>
+                        <p>Once cleaned, I imported the dataset into Tableau and built a story containing three dashboards:</p>
+                        
+                        <h5><strong>1. Segment Overview</strong></h5>
+                        <p>This dashboard introduced core distributions:</p>
+                        <ul>
+                            <li>Marital status and age (most customers are 40–65; high response in 25–35 and 70+)</li>
+                            <li>Education vs. Income (PhD and Master's have higher income and stronger campaign acceptance)</li>
+                            <li>Family Type split: Small Families (50%) dominate volume; No Kids (28%) dominate spend.</li>
+                        </ul>
+                        
+                        <h5><strong>2. Purchase & Channel Behavior</strong></h5>
+                        <p>Here I focused on how segments behave:</p>
+                        
+                        <p><strong>Spending by Product:</strong></p>
+                        <ul>
+                            <li>Wine leads with $680,816 in total sales</li>
+                            <li>Meat is second with $373,968 and $167 per user</li>
+                            <li>Gold shows premium potential ($44/user on average)</li>
+                        </ul>
+                        
+                        <p><strong>Channel Use & Recency:</strong></p>
+                        <ul>
+                            <li>Web shows stable purchase patterns across all recency buckets</li>
+                            <li>Store has 42% more transactions than Web, but is more sensitive to recency</li>
+                            <li>Catalog fades quickly, suggesting low retention</li>
+                        </ul>
+                        
+                        <p><strong>Frequency:</strong></p>
+                        <ul>
+                            <li>65% of users made 10 or fewer purchases</li>
+                            <li>Frequent buyers (>20 purchases) are under 7% of base</li>
+                        </ul>
+                        
+                        <h5><strong>3. High-Value Segment Deep Dive</strong></h5>
+                        <p>This dashboard isolates "No Kids" as the most valuable segment:</p>
+                        <ul>
+                            <li>Avg. spend: $1,097</li>
+                            <li>Highest response rate</li>
+                            <li>Strongest use of Web + Store</li>
+                            <li>Preference for wine ($487 avg.) and meat ($373)</li>
+                        </ul>
+                        <p>Full Families spent the least (~$500) and leaned toward fish, sweets, and offline channels.</p>
+                    </div>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>🎯 Conclusion</h3>
+                    <div class="insight-card">
+                        <p>This project demonstrates that <strong>customer value is not spread evenly — it's concentrated in specific structural segments.</strong> Notably, households without children deliver higher revenue, stronger marketing response, and more consistent behavior over time.</p>
+                        
+                        <h4>📊 Recommendations:</h4>
+                        <ul>
+                            <li><strong>Target the No Kids segment</strong> with premium offers and retention campaigns</li>
+                            <li><strong>Use the Web channel</strong> as a stable re-engagement vector</li>
+                            <li><strong>Reduce reliance on Catalog,</strong> especially for dormant users</li>
+                            <li><strong>Promote high-margin products</strong> like wine and gold to top-performing segments</li>
+                        </ul>
+                        
+                        <p><strong>Strategic Focus:</strong> Instead of optimizing for total volume, strategy should prioritize value-per-customer and behavioral stability, both of which are strongest in the No Kids group.</p>
                     </div>
                 </div>
 
                 <div class="tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Scikit-learn</span>
-                    <span>Matplotlib</span>
-                    <span>Seaborn</span>
+                    <span>Tableau</span>
+                    <span>Excel</span>
                     <span>Customer Analytics</span>
-                    <span>Machine Learning</span>
+                    <span>Segmentation</span>
                     <span>Data Visualization</span>
+                    <span>Behavioral Analysis</span>
+                    <span>Marketing Strategy</span>
                 </div>
             </div>
         </div>
