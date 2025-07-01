@@ -439,7 +439,8 @@ main {
 }
 
 .certificate-image img,
-.certificate-image embed {
+.certificate-image embed,
+.certificate-image iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
