@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Mental Health Analysis - Project Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>LD</h1>
+            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">LD</a></h1>
             <div class="nav-links">
-                <a href="projects.html" class="active">Projects</a>
-                <a href="education.html">Education</a>
+                <a href="../pages/projects.html" class="active">Projects</a>
+                <a href="../pages/education.html">Education</a>
                 <a href="beyond-analytics.html">Beyond Analytics</a>
-                <a href="contact.html">Contact</a>
+                <a href="../pages/contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -56,7 +56,7 @@
             </div>
 
             <div style="text-align: center; margin: 2rem 0;">
-                <img src="public/images/overviews.png" alt="Project Overview" class="overview-image" loading="lazy">
+                <img src="../assets/images/overviews.png" alt="Project Overview" class="overview-image" loading="lazy">
             </div>
 
             <div class="analysis-section about-project">
@@ -108,7 +108,7 @@
                     <li>Recorded as numeric input (for study/work hours)</li>
                 </ul>
                 <p>This structure allowed me to calculate average values for each factor by mental state and visualize the results side-by-side in Tableau. It also made it easier to apply filters and groupings dynamically while keeping the dashboard structure clean and scalable.</p>
-                <img src="public/images/pivot_table.png" alt="Pivot Table Structure" class="pivot-table-image" loading="lazy">
+                <img src="../assets/images/pivot_table.png" alt="Pivot Table Structure" class="pivot-table-image" loading="lazy">
 
                 <h4>Dual Dataset Strategy</h4>
                 <p>While the pivoted dataset was optimal for factor-based comparisons, some analyses required student-level records in a wide format — with each attribute in its own column.</p>
@@ -118,13 +118,13 @@
                     <li>Long format: used for analyzing stress-related academic attributes with grouped bar charts</li>
                 </ul>
                 <p>This dual-format setup gave me flexibility in Tableau — ensuring each insight used the most suitable structure, without compromising clarity or visual integrity.</p>
-                <img src="public/images/data_set.png" alt="Dual Dataset Structure" class="pivot-table-image" loading="lazy">
+                <img src="../assets/images/data_set.png" alt="Dual Dataset Structure" class="pivot-table-image" loading="lazy">
 
                 <h4>Cleaning Steps</h4>
                 <ul>
                     <li>City cleanup:
                         <p>To ensure reliable geographic analysis, I created a reference list of valid Indian cities. Using Excel formulas (TRIM, LOWER, COUNTIF), I normalized all city entries and compared them against the official list. Non-matching values — including personal names, degrees, or invalid strings — were flagged as "Unrecognized" and excluded from geographic visualizations.</p>
-                        <img src="public/images/cleaned_cities.png" alt="City Cleanup Process" class="cleaned-cities-image" loading="lazy">
+                        <img src="../assets/images/cleaned_cities.png" alt="City Cleanup Process" class="cleaned-cities-image" loading="lazy">
                     </li>
                     <li>Zero-variance columns:
                         <p>Two fields (Job Satisfaction, Work Pressure) contained only zero values. These were excluded.</p>
@@ -155,7 +155,7 @@
                         <li>Study satisfaction: lower in the depressed group</li>
                     </ul>
                     <p>Interpretation: Depressed students put in more effort but feel it doesn't pay off. The pattern reflects burnout, not disengagement.</p>
-                    <img src="public/images/work_study_hour.png" alt="Work/Study Hours Comparison" class="insight-image" loading="lazy">
+                    <img src="../assets/images/work_study_hour.png" alt="Work/Study Hours Comparison" class="insight-image" loading="lazy">
                 </div>
 
                 <div class="insight-card">
@@ -165,7 +165,7 @@
                         <li>Non-depressed students are concentrated in the 6–8h range</li>
                     </ul>
                     <p>Interpretation: Irregular sleep is a strong behavioral indicator of internal imbalance.</p>
-                    <img src="public/images/sleep_duration.png" alt="Sleep Duration Patterns" class="insight-image" loading="lazy">
+                    <img src="../assets/images/sleep_duration.png" alt="Sleep Duration Patterns" class="insight-image" loading="lazy">
                 </div>
 
                 <div class="insight-card">
@@ -175,28 +175,28 @@
                         <li>Family mental illness: 51% vs 45%</li>
                     </ul>
                     <p>Interpretation: These variables show the strongest contrast and are key risk flags.</p>
-                    <img src="public/images/mental_illness.png" alt="Mental Health Indicators" class="insight-image" loading="lazy">
+                    <img src="../assets/images/mental_illness.png" alt="Mental Health Indicators" class="insight-image" loading="lazy">
                 </div>
 
                 <div class="insight-card">
                     <h4>No significant gender difference</h4>
                     <p>Gender distribution was identical in both groups: 56% male, 44% female</p>
                     <p>Interpretation: Gender did not affect reported depression in this dataset.</p>
-                    <img src="public/images/gender.png" alt="Gender Distribution Analysis" class="insight-image" loading="lazy">
+                    <img src="../assets/images/gender.png" alt="Gender Distribution Analysis" class="insight-image" loading="lazy">
                 </div>
 
                 <div class="insight-card">
                     <h4>Geography matters</h4>
                     <p>Depression rates ranged by city: from 52% in Jaipur to 67% in Hyderabad and Ahmedabad</p>
                     <p>Interpretation: City-level differences likely reflect academic intensity, social environment, or access to support.</p>
-                    <img src="public/images/geography.png" alt="Geographic Depression Analysis" class="insight-image" loading="lazy">
+                    <img src="../assets/images/geography.png" alt="Geographic Depression Analysis" class="insight-image" loading="lazy">
                 </div>
 
                 <div class="insight-card">
                     <h4>Diet shows weak correlation</h4>
                     <p>Unhealthy diet more common in depressed students (26% vs 11%)</p>
                     <p>Interpretation: The signal exists but is weaker. Diet likely reflects disruption rather than a primary cause.</p>
-                    <img src="public/images/deitry.png" alt="Diet Correlation Analysis" class="insight-image" loading="lazy">
+                    <img src="../assets/images/deitry.png" alt="Diet Correlation Analysis" class="insight-image" loading="lazy">
                 </div>
             </div>
 
@@ -235,7 +235,7 @@
                 </div>
             </div>
 
-            <a href="projects.html" class="back-link">← Back to Projects</a>
+            <a href="../pages/projects.html" class="back-link">← Back to Projects</a>
         </section>
     </main>
 
