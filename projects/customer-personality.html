@@ -1,194 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Personality Analysis - Ludmila Dolontaeva</title>
+    <title>Customer Personality Analysis | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">LD</a></h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html" class="active">Projects</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/contact.html">Contact</a>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+            <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+            <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
-        <section class="hero">
-            <h2>Customer Personality Analysis</h2>
-            <p>Behavioral and demographic analysis to identify value-driving segments and inform marketing strategies</p>
+        <!-- Project Hero -->
+        <section class="hero" style="min-height: 60vh; align-items: center;">
+            <div class="container">
+                <div class="hero-content" style="max-width: 800px;">
+                    <a href="../pages/projects.html"
+                        style="color: var(--accent-teal); display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: var(--space-md);">
+                        <i class="fas fa-arrow-left"></i> Back to Projects
+                    </a>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Customer Personality Analysis</h1>
+                    <p class="hero-subtitle">Retail customer data project focused on segmentation, spending behavior,
+                        and channel performance.</p>
+
+                    <div class="flex" style="gap: var(--space-sm); margin-top: var(--space-md);">
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(45, 212, 191, 0.1); color: var(--accent-teal); border-radius: 50px; border: 1px solid rgba(45, 212, 191, 0.2);">Excel</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 50px; border: 1px solid rgba(168, 85, 247, 0.2);">Tableau</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); border-radius: 50px; border: 1px solid rgba(59, 130, 246, 0.2);">Segmentation</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-details">
-            <div class="project-overview">
-                <h3>TL;DR</h3>
-                <p>In this project, I conducted a behavioral and demographic analysis based on customer data from a retail business. The goal was to identify value-driving segments, understand product/channel performance, and inform marketing and engagement strategies. The final Tableau story included three dashboards:</p>
-                
-                <ul>
-                    <li><strong>Segment Overview</strong></li>
-                    <li><strong>Purchase & Channel Behavior</strong></li>
-                    <li><strong>High-Value Segment Deep Dive</strong></li>
-                </ul>
-            </div>
+        <div class="container" style="padding-bottom: var(--space-2xl);">
 
-            <div class="tableau-button-container">
-                <a href="https://public.tableau.com/app/profile/liudmila.dolontaeva/viz/CustomerAnalysis_17497578594940/Story1" target="_blank" class="tableau-button">
-                    <i class="fas fa-chart-bar"></i> Check out the project on Tableau Public
-                </a>
-            </div>
-
-            <div class="analysis-section">
-                <h3>Key Insights and Recommendations</h3>
-                
-                <h4>Customer Value and Segments</h4>
-                <ul>
-                    <li><strong>Customers with no children consistently spend more</strong> than other groups, averaging over $1,000 per person.</li>
-                    <li><strong>Households without kids are the most responsive</strong> to campaigns and more likely to buy premium categories (wine, meat, gold).</li>
-                </ul>
-
-                <h4>Product Strategy</h4>
-                <ul>
-                    <li><strong>Wine is the highest-value product:</strong> $680,816 total revenue and $304 per customer — more than 11× the spend on sweets or fruits.</li>
-                    <li><strong>Gold has lower volume but shows strong value per buyer,</strong> making it ideal for targeted promotions.</li>
-                </ul>
-
-                <h4>Channel Performance</h4>
-                <ul>
-                    <li><strong>Web channel is the most stable over time,</strong> maintaining average purchases across recency groups.</li>
-                    <li><strong>Store dominates in volume but decays faster</strong> in retention, while Catalog shows sharp drop-off.</li>
-                </ul>
-            </div>
-
-            <div class="analysis-section">
-                <h3>Analytical Process</h3>
-                
-                <h4>1. Understanding the Business Task</h4>
-                <p>The main business objectives were:</p>
-                <ul>
-                    <li>Identify high-spending and high-response customer segments</li>
-                    <li>Understand how demographic traits influence behavior</li>
-                    <li>Connect product/channel trends to segment structure</li>
-                </ul>
-                
-                <p><strong>Guiding questions:</strong></p>
-                <ul>
-                    <li>Who are our highest-value customers?</li>
-                    <li>How does family size impact product mix?</li>
-                    <li>Which channels deliver consistent engagement?</li>
-                    <li>What product categories yield highest revenue per user?</li>
-                </ul>
-
-                <h4>2. Data Preparation and Cleaning</h4>
-                <p>The dataset included demographics, campaign response, product spend, and transactional info.</p>
-                <p><strong>While the final transformations were implemented in Tableau, I manually verified grouping logic and calculations in Excel during data preparation.</strong></p>
-                
-                <p><strong>Key cleaning steps:</strong></p>
-                <ul>
-                    <li>Merged child/teen counts into a single "Family Type" column</li>
-                    <li>Created three family segments: Full Family, Small Family, No Kids</li>
-                </ul>
-                <img src="../assets/images/familytypr.png" alt="Family Type Segmentation" class="family-type-image" loading="lazy">
-                <ul>
-                    <li>Grouped birth years into age bins</li>
-                    <li>Unified education and marital status categories</li>
-                    <li>Removed customers with $0 spend</li>
-                    <li>Aggregated 6 campaign response flags into a simplified "Response" field</li>
-                </ul>
-
-                <h4>3. Data Analysis and Visualization</h4>
-                <p>Once cleaned, I imported the dataset into Tableau and built a story containing three dashboards:</p>
-                
-                <h4><strong>1. Segment Overview</strong></h4>
-                <p>This dashboard introduced core distributions:</p>
-                <ul>
-                    <li>Marital status and age (most customers are 40–65; high response in 25–35 and 70+)</li>
-                    <li>Education vs. Income (PhD and Master's have higher income and stronger campaign acceptance)</li>
-                    <li>Family Type split: Small Families (50%) dominate volume; No Kids (28%) dominate spend.</li>
-                </ul>
-                <img src="../assets/images/Segment Overview.png" alt="Segment Overview Dashboard" class="insight-image" loading="lazy">
-                
-                <h4><strong>2. Purchase & Channel Behavior</strong></h4>
-                <p>Here I focused on how segments behave:</p>
-                
-                <p><strong>Spending by Product:</strong></p>
-                <ul>
-                    <li>Wine leads with $680,816 in total sales</li>
-                    <li>Meat is second with $373,968 and $167 per user</li>
-                    <li>Gold shows premium potential ($44/user on average)</li>
-                </ul>
-                <img src="../assets/images/Spending by Product.png" alt="Spending by Product Analysis" class="insight-image" loading="lazy">
-                
-                <p><strong>Channel Use & Recency:</strong></p>
-                <ul>
-                    <li>Web shows stable purchase patterns across all recency buckets</li>
-                    <li>Store has 42% more transactions than Web, but is more sensitive to recency</li>
-                    <li>Catalog fades quickly, suggesting low retention</li>
-                </ul>
-                
-                <p><strong>Frequency:</strong></p>
-                <ul>
-                    <li>65% of users made 10 or fewer purchases</li>
-                    <li>Frequent buyers (>20 purchases) are under 7% of base</li>
-                </ul>
-                <img src="../assets/images/Channel Use & Recency.png" alt="Channel Use & Recency Analysis" class="insight-image" loading="lazy">
-                
-                <p>This calculated field segments customers into four groups based on how many days have passed since their last purchase. This allows us to compare purchase behavior and retention across recency levels, from active (0–30 days) to dormant (90+ days).</p>
-                
-                <img src="../assets/images/totalRecency.png" alt="Total Recency Analysis" class="family-type-image" loading="lazy">
-                
-                <h4><strong>3. High-Value Segment Deep Dive</strong></h4>
-                <p>This dashboard isolates "No Kids" as the most valuable segment:</p>
-                <ul>
-                    <li>Avg. spend: $1,097</li>
-                    <li>Highest response rate</li>
-                    <li>Strongest use of Web + Store</li>
-                    <li>Preference for wine ($487 avg.) and meat ($373)</li>
-                </ul>
-                <p>Full Families spent the least (~$500) and leaned toward fish, sweets, and offline channels.</p>
-                <img src="../assets/images/ High-Value Segment Deep Dive.png" alt="High-Value Segment Deep Dive Analysis" class="insight-image" loading="lazy">
-            </div>
-
-            <div class="analysis-section">
-                <h3>Conclusion</h3>
-                <p>This project demonstrates that <strong>customer value is not spread evenly — it's concentrated in specific structural segments.</strong> Notably, households without children deliver higher revenue, stronger marketing response, and more consistent behavior over time.</p>
-                
-                <h4>Recommendations:</h4>
-                <ul>
-                    <li><strong>Target the No Kids segment</strong> with premium offers and retention campaigns</li>
-                    <li><strong>Use the Web channel</strong> as a stable re-engagement vector</li>
-                    <li><strong>Reduce reliance on Catalog,</strong> especially for dormant users</li>
-                    <li><strong>Promote high-margin products</strong> like wine and gold to top-performing segments</li>
-                </ul>
-                
-                <p><strong>Strategic Focus:</strong> Instead of optimizing for total volume, strategy should prioritize value-per-customer and behavioral stability, both of which are strongest in the No Kids group.</p>
-            </div>
-
-            <div class="project-technologies">
-                <h3>Technologies Used</h3>
-                <div class="tags">
-                    <span>Tableau</span>
-                    <span>Excel</span>
-                    <span>Customer Analytics</span>
-                    <span>Segmentation</span>
-                    <span>Data Visualization</span>
-                    <span>Behavioral Analysis</span>
-                    <span>Marketing Strategy</span>
+            <!-- Overview Card -->
+            <div class="glass-card" style="margin-bottom: var(--space-xl);">
+                <h2 style="margin-bottom: var(--space-sm);">Project Overview</h2>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">
+                    Designed and delivered 5 interactive Tableau dashboards covering demographics, product spending,
+                    family type segmentation, and campaign response. Translated raw dataset into clear visual tools that
+                    enable stakeholders to understand customer groups and buying patterns at a glance.
+                </p>
+                <div class="flex" style="gap: var(--space-md);">
+                    <div>
+                        <h4 style="color: var(--text-primary);">Role</h4>
+                        <p style="color: var(--text-secondary);">Business Analyst</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary);">Skills</h4>
+                        <p style="color: var(--text-secondary);">Excel, Tableau, Segmentation, Data Cleaning, Dashboard
+                            Design</p>
+                    </div>
                 </div>
             </div>
 
-            <a href="../pages/projects.html" class="back-link">← Back to Projects</a>
-        </section>
+            <!-- Key Insights Grid -->
+            <h2 class="section-title" style="font-size: 2rem; text-align: left; left: 0; transform: none;">Key Segments
+            </h2>
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: var(--space-xl);">
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-users"
+                        style="font-size: 2rem; color: var(--accent-teal); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">High-Value Customers</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Small but profitable segment with high
+                        frequency and monetary value.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-user-clock"
+                        style="font-size: 2rem; color: var(--accent-purple); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">At-Risk Customers</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Customers who haven't purchased recently
+                        but have high potential.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-tags"
+                        style="font-size: 2rem; color: var(--accent-coral); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Discount Seekers</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Segment highly responsive to promotions
+                        and price reductions.</p>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+
+                <section>
+                    <h2 style="margin-bottom: var(--space-md);">Dashboard Visualizations</h2>
+                    <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+                        <!-- Visualization 1 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/Segment Overview.png" alt="Segment Overview"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Segment Overview</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    This visualization provides a high-level view of the customer base, categorized into
+                                    distinct segments based on purchasing behavior and demographics. It highlights the
+                                    relative size and value of each group, allowing for targeted marketing strategies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Understanding product preferences is crucial for cross-selling and up-selling. The following
+                            chart breaks down spending habits across different product categories for each identified
+                            segment.
+                        </p>
+
+                        <!-- Visualization 2 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/Spending by Product.png" alt="Spending Analysis"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Spending by Product</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    A detailed breakdown of spending habits reveals which product categories drive
+                                    revenue for each customer segment. This insight helps in optimizing inventory and
+                                    promotional offers.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Analyzing how customers interact with the brand is key to optimizing engagement. This next
+                            visualization examines the preferred channels—Web, Store, or Catalog—for each segment.
+                        </p>
+
+                        <!-- Visualization 3 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/Channel Use & Recency.png" alt="Channel Usage"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Channel Usage</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    This chart analyzes the preferred purchasing channels (Web, Store, Catalog) and the
+                                    recency of interactions, helping to tailor communication strategies to the most
+                                    effective mediums.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            To drive growth, we need to focus on our most valuable customers. The deep dive below
+                            explores the characteristics of the high-value segment in greater detail.
+                        </p>
+
+                        <!-- Visualization 4 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/High-Value Segment Deep Dive.png" alt="High Value Segment"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    High-Value Segment Deep Dive</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    An in-depth look at the high-value customer segment, identifying common traits and
+                                    behaviors that distinguish them from other groups.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Demographics play a significant role in customer behavior. The final visualizations examine
+                            the impact of family structure and geography on purchasing patterns.
+                        </p>
+
+                        <!-- Visualization 5 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/familyType.png" alt="Family Type Analysis"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Family Type Analysis</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Analysis of how family structure influences spending and product preferences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Visualization 6 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/geography.png" alt="Geographic Distribution"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Geographic Distribution</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Mapping customer distribution to identify key geographic markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="text-align: center; margin-top: var(--space-lg);">
+                    <a href="https://public.tableau.com/app/profile/liudmila.dolontaeva/viz/CustomerAnalysis_17497578594940/Story1"
+                        target="_blank" class="btn btn-primary">
+                        View Interactive Tableau Dashboard <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>

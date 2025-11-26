@@ -1,102 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Ludmila Dolontaeva</title>
+    <title>Projects | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <div class="analytics-decoration"></div>
-    <div class="analytics-decoration-2"></div>
 
-    <header>
-        <nav>
-            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">LD</a></h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html" class="active">Projects</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/contact.html">Contact</a>
-            </div>
-        </nav>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="education.html" class="nav-link">Education</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Projects</h2>
-            <p>Business Analytics Case Studies</p>
-        </section>
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
 
-        <section class="projects-container">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Depression Study</h3>
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <p>Comprehensive analysis of depression patterns and risk factors using advanced statistical methods and machine learning techniques. This research project aims to identify key indicators and develop predictive models for early intervention.</p>
-                    <div class="tags">
-                        <span>Tableau</span>
-                        <span>Excel</span>
-                        <span>Statistical Analysis</span>
-                        <span>Mental Health</span>
-                    </div>
-                    <a href="../projects/depression-study.html" class="project-link">
-                        <span>View Details</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+    <main class="container" style="padding-top: 120px; padding-bottom: var(--space-2xl);">
+        <h1 class="section-title">Project Portfolio</h1>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--space-xl);">
+            A collection of data-driven solutions, from customer segmentation to predictive modeling.
+        </p>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Customer Personality Analysis</h3>
-                        <div class="project-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                    </div>
-                    <p>Advanced customer segmentation and personality analysis to optimize marketing strategies. Applied machine learning clustering techniques to identify distinct customer groups and developed targeted campaign recommendations that improved conversion rates by 18%.</p>
-                    <div class="tags">
-                        <span>Tableau</span>
-                        <span>Excel</span>
-                        <span>Customer Segmentation</span>
-                        <span>Behavioral Analysis</span>
-                    </div>
-                    <a href="../projects/customer-personality.html" class="project-link">
-                        <span>View Details</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Cybersecurity Threats Analysis</h3>
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+            <!-- Project Card 1 -->
+            <article class="glass-card" style="display: flex; flex-direction: column; height: 100%;">
+                <div
+                    style="height: 200px; background: #f1f5f9; border-radius: 8px; margin-bottom: var(--space-sm); overflow: hidden; position: relative;">
+                    <div
+                        style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(13, 148, 136, 0.1), rgba(124, 58, 237, 0.1));">
                     </div>
-                    <p>Comprehensive analysis of global cyberattack trends from 2015-2024, identifying key patterns in attack types, financial losses, and defense mechanisms. Analyzed over 2,500 incidents across multiple industries to provide actionable insights for cybersecurity strategy and risk management.</p>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Data Analysis</span>
-                        <span>Cybersecurity</span>
-                        <span>Risk Assessment</span>
-                        <span>Threat Intelligence</span>
-                    </div>
-                    <a href="../projects/cybersecurity-threats.html" class="project-link">
-                        <span>View Details</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <i class="fas fa-chart-line"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: rgba(0,0,0,0.1);"></i>
                 </div>
-            </div>
-        </section>
+                <h3 style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Customer Personality Analysis</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Segmentation analysis using
+                    Excel and Tableau to identify key customer groups.</p>
+                <div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-bottom: var(--space-md);">
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(13, 148, 136, 0.1); color: var(--accent-teal); border-radius: 20px;">Excel</span>
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(124, 58, 237, 0.1); color: var(--accent-purple); border-radius: 20px;">Tableau</span>
+                </div>
+                <a href="../projects/customer-personality.html" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: auto;">View Details</a>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="glass-card" style="display: flex; flex-direction: column; height: 100%;">
+                <div
+                    style="height: 200px; background: #f1f5f9; border-radius: 8px; margin-bottom: var(--space-sm); overflow: hidden; position: relative;">
+                    <div
+                        style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(219, 39, 119, 0.1), rgba(37, 99, 235, 0.1));">
+                    </div>
+                    <i class="fas fa-shield-alt"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: rgba(0,0,0,0.1);"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Cybersecurity Threats</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Analyzing trend patterns in
+                    cybersecurity attacks to predict future vulnerabilities.</p>
+                <div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-bottom: var(--space-md);">
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(219, 39, 119, 0.1); color: var(--accent-coral); border-radius: 20px;">Python</span>
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); border-radius: 20px;">Pandas</span>
+                </div>
+                <a href="../projects/cybersecurity-threats.html" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: auto;">View Details</a>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="glass-card" style="display: flex; flex-direction: column; height: 100%;">
+                <div
+                    style="height: 200px; background: #f1f5f9; border-radius: 8px; margin-bottom: var(--space-sm); overflow: hidden; position: relative;">
+                    <div
+                        style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(124, 58, 237, 0.1), rgba(13, 148, 136, 0.1));">
+                    </div>
+                    <i class="fas fa-brain"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: rgba(0,0,0,0.1);"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: var(--space-xs);">Student Mental Health</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Statistical analysis of mental
+                    health data to identify correlation factors.</p>
+                <div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-bottom: var(--space-md);">
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(13, 148, 136, 0.1); color: var(--accent-teal); border-radius: 20px;">Excel</span>
+                    <span
+                        style="font-size: 0.8rem; padding: 0.25rem 0.75rem; background: rgba(124, 58, 237, 0.1); color: var(--accent-purple); border-radius: 20px;">Tableau</span>
+                </div>
+                <a href="../projects/depression-study.html" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: auto;">View Details</a>
+            </article>
+
+
+
+        </div>
     </main>
 
-    <footer>
-        <p>© 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>

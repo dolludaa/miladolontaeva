@@ -1,245 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Mental Health Analysis - Project Details</title>
+    <title>Depression Study | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html" style="text-decoration: none; color: inherit;">LD</a></h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html" class="active">Projects</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/contact.html">Contact</a>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+            <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+            <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
-        <section class="hero">
-            <h2>Student Mental Health Analysis</h2>
-            <p>Understanding Depression Patterns in Academic Settings</p>
+        <!-- Project Hero -->
+        <section class="hero" style="min-height: 60vh; align-items: center;">
+            <div class="container">
+                <div class="hero-content" style="max-width: 800px;">
+                    <a href="../pages/projects.html"
+                        style="color: var(--accent-teal); display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: var(--space-md);">
+                        <i class="fas fa-arrow-left"></i> Back to Projects
+                    </a>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Student Mental Health Analysis</h1>
+                    <p class="hero-subtitle">Explored 27,901 student surveys to uncover structural patterns of
+                        depression across academic, lifestyle, and psychological factors.</p>
+
+                    <div class="flex" style="gap: var(--space-sm); margin-top: var(--space-md);">
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(45, 212, 191, 0.1); color: var(--accent-teal); border-radius: 50px; border: 1px solid rgba(45, 212, 191, 0.2);">Excel</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 50px; border: 1px solid rgba(168, 85, 247, 0.2);">Tableau</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); border-radius: 50px; border: 1px solid rgba(59, 130, 246, 0.2);">Data
+                            Analysis</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-details">
-            <div class="project-overview">
-                <h3>TL;DR</h3>
-                <p>I analyzed a CSV dataset of 27,901 student responses to explore which academic, lifestyle, and psychological factors correlate most strongly with self-reported depression.</p>
+        <div class="container" style="padding-bottom: var(--space-2xl);">
 
-                <h4>My process:</h4>
-                <ul>
-                    <li>Cleaned mislabeled and inconsistent city entries in Excel</li>
-                    <li>Removed invalid responses and non-geographic data</li>
-                    <li>Focused on key variables: academic pressure, satisfaction, sleep, suicidal thoughts</li>
-                    <li>Visualized key insights in Tableau dashboards</li>
-                </ul>
-
-                <h4>Key findings:</h4>
-                <ul>
-                    <li>Depressed students are not disengaged — they're overloaded and emotionally burned out</li>
-                    <li>50% of depressed students reported suicidal thoughts vs. 13% in the non-depressed group</li>
-                    <li>Sleep extremes (<5h or >8h) and unhealthy diets are more common in the depressed group</li>
-                    <li>Gender shows no major effect, while city-level variation suggests location-specific stress</li>
-                </ul>
-            </div>
-
-            <div class="tableau-button-container">
-                <a href="https://public.tableau.com/app/profile/liudmila.dolontaeva/viz/DepressionDataAnalysis/Story1" target="_blank" class="tableau-button">
-                    <i class="fas fa-chart-bar"></i> Check out the project on Tableau Public
-                </a>
-            </div>
-
-            <div style="text-align: center; margin: 2rem 0;">
-                <img src="../assets/images/overviews.png" alt="Project Overview" class="overview-image" loading="lazy">
-            </div>
-
-            <div class="analysis-section about-project">
-                <h3>About the Project</h3>
-                <p>This project stood out to me because I've long been interested in how academic and emotional pressure affect students, especially in fast-paced environments.</p>
-                <p>When I came across this publicly available dataset of nearly 28,000 student mental health responses, I saw an opportunity to explore those stress patterns through data.</p>
-
-                <p>I wasn't aiming to build a predictive model — my goal was to find clear, interpretable signals of depression: emotional, behavioral, environmental.<br>
-                Visual storytelling helped turn raw CSV data into structured insight, allowing me to highlight risk areas that could guide awareness or future intervention.</p>
-
-                <h4>I followed a six-step analytical workflow:</h4>
-                <ul class="workflow-steps">
-                    <li>Ask</li>
-                    <li>Prepare</li>
-                    <li>Clean</li>
-                    <li>Analyze</li>
-                    <li>Share</li>
-                    <li>Conclude</li>
-                </ul>
-            </div>
-
-            <div class="analysis-section">
-                <h3>1. Ask</h3>
-                <p>What measurable factors distinguish depressed students from non-depressed ones?</p>
-                <p>The central goal was to surface which academic conditions, habits, or psychological traits are consistently associated with reported depression — not just correlations, but patterns strong enough to inform action.</p>
-            </div>
-
-            <div class="analysis-section">
-                <h3>2. Prepare & Clean</h3>
-                <h4>Dataset Overview</h4>
-                <ul>
-                    <li>27,901 records from anonymized student surveys</li>
-                    <li>Key fields included:
-                        <ul>
-                            <li>Demographics: gender, city</li>
-                            <li>Academic: CGPA, pressure (1–5), satisfaction (1–5)</li>
-                            <li>Lifestyle: daily study/work hours, sleep range, diet type</li>
-                            <li>Psychological: suicidal thoughts, family mental illness</li>
-                            <li>Target label: Depression_Status (Depressed / Not Depressed)</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>Data Structuring for Analysis</h4>
-                <p>To compare multiple behavioral and academic factors across student mood groups, I reorganized the dataset into a long format. Each row represents a single response linked to one factor, such as academic pressure, study satisfaction, work hours, or financial stress.</p>
-                <p>Each factor was either:</p>
-                <ul>
-                    <li>Scored on a 0–5 scale (for pressure, satisfaction, and stress), or</li>
-                    <li>Recorded as numeric input (for study/work hours)</li>
-                </ul>
-                <p>This structure allowed me to calculate average values for each factor by mental state and visualize the results side-by-side in Tableau. It also made it easier to apply filters and groupings dynamically while keeping the dashboard structure clean and scalable.</p>
-                <img src="../assets/images/pivot_table.png" alt="Pivot Table Structure" class="pivot-table-image" loading="lazy">
-
-                <h4>Dual Dataset Strategy</h4>
-                <p>While the pivoted dataset was optimal for factor-based comparisons, some analyses required student-level records in a wide format — with each attribute in its own column.</p>
-                <p>To address this, I maintained two separate versions of the data:</p>
-                <ul>
-                    <li>Wide format: used for gender-based distributions, depression breakdowns, and lifestyle comparisons (e.g., sleep, diet)</li>
-                    <li>Long format: used for analyzing stress-related academic attributes with grouped bar charts</li>
-                </ul>
-                <p>This dual-format setup gave me flexibility in Tableau — ensuring each insight used the most suitable structure, without compromising clarity or visual integrity.</p>
-                <img src="../assets/images/data_set.png" alt="Dual Dataset Structure" class="pivot-table-image" loading="lazy">
-
-                <h4>Cleaning Steps</h4>
-                <ul>
-                    <li>City cleanup:
-                        <p>To ensure reliable geographic analysis, I created a reference list of valid Indian cities. Using Excel formulas (TRIM, LOWER, COUNTIF), I normalized all city entries and compared them against the official list. Non-matching values — including personal names, degrees, or invalid strings — were flagged as "Unrecognized" and excluded from geographic visualizations.</p>
-                        <img src="../assets/images/cleaned_cities.png" alt="City Cleanup Process" class="cleaned-cities-image" loading="lazy">
-                    </li>
-                    <li>Zero-variance columns:
-                        <p>Two fields (Job Satisfaction, Work Pressure) contained only zero values. These were excluded.</p>
-                    </li>
-                    <li>Category normalization:
-                        <p>Sleep durations like "<5 hours", ">8 hours", and diet labels like "moderate" or "unhealthy" were normalized to use consistent phrasing. This ensured categorical filters worked correctly in Tableau.</p>
-                    </li>
-                    <li>Partial records:
-                        <p>For each visualization, I included only rows with complete values for the variables being compared.</p>
-                    </li>
-                </ul>
-
-                <h4>Tools used:</h4>
-                <ul>
-                    <li>Excel for cleaning</li>
-                    <li>Tableau for visualization</li>
-                </ul>
-            </div>
-
-            <div class="analysis-section">
-                <h3>3. Insights — What the Data Shows</h3>
-                
-                <div class="insight-card">
-                    <h4>Depressed students are academically engaged — but overwhelmed</h4>
-                    <ul>
-                        <li>Academic pressure: 3.7 vs 2.4 (Depressed vs Happy)</li>
-                        <li>Work/study time: 7.8 vs 6.2 hours/day</li>
-                        <li>Study satisfaction: lower in the depressed group</li>
-                    </ul>
-                    <p>Interpretation: Depressed students put in more effort but feel it doesn't pay off. The pattern reflects burnout, not disengagement.</p>
-                    <img src="../assets/images/work_study_hour.png" alt="Work/Study Hours Comparison" class="insight-image" loading="lazy">
-                </div>
-
-                <div class="insight-card">
-                    <h4>Sleep patterns are a visible red flag</h4>
-                    <ul>
-                        <li>Students with <5h or >8h of sleep are more likely to be depressed</li>
-                        <li>Non-depressed students are concentrated in the 6–8h range</li>
-                    </ul>
-                    <p>Interpretation: Irregular sleep is a strong behavioral indicator of internal imbalance.</p>
-                    <img src="../assets/images/sleep_duration.png" alt="Sleep Duration Patterns" class="insight-image" loading="lazy">
-                </div>
-
-                <div class="insight-card">
-                    <h4>Psychological indicators dominate</h4>
-                    <ul>
-                        <li>Suicidal thoughts: 50% in the depressed group, 13% in the non-depressed group</li>
-                        <li>Family mental illness: 51% vs 45%</li>
-                    </ul>
-                    <p>Interpretation: These variables show the strongest contrast and are key risk flags.</p>
-                    <img src="../assets/images/mental_illness.png" alt="Mental Health Indicators" class="insight-image" loading="lazy">
-                </div>
-
-                <div class="insight-card">
-                    <h4>No significant gender difference</h4>
-                    <p>Gender distribution was identical in both groups: 56% male, 44% female</p>
-                    <p>Interpretation: Gender did not affect reported depression in this dataset.</p>
-                    <img src="../assets/images/gender.png" alt="Gender Distribution Analysis" class="insight-image" loading="lazy">
-                </div>
-
-                <div class="insight-card">
-                    <h4>Geography matters</h4>
-                    <p>Depression rates ranged by city: from 52% in Jaipur to 67% in Hyderabad and Ahmedabad</p>
-                    <p>Interpretation: City-level differences likely reflect academic intensity, social environment, or access to support.</p>
-                    <img src="../assets/images/geography.png" alt="Geographic Depression Analysis" class="insight-image" loading="lazy">
-                </div>
-
-                <div class="insight-card">
-                    <h4>Diet shows weak correlation</h4>
-                    <p>Unhealthy diet more common in depressed students (26% vs 11%)</p>
-                    <p>Interpretation: The signal exists but is weaker. Diet likely reflects disruption rather than a primary cause.</p>
-                    <img src="../assets/images/deitry.png" alt="Diet Correlation Analysis" class="insight-image" loading="lazy">
+            <!-- Overview Card -->
+            <div class="glass-card" style="margin-bottom: var(--space-xl);">
+                <h2 style="margin-bottom: var(--space-sm);">Project Overview</h2>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">
+                    Analyzed survey data using Excel PivotTables to structure key metrics and compare groups. Built a
+                    Tableau dashboard that makes complex data easy to explore and understand for decision-makers.
+                    Delivered clear insights that can support universities or organizations in identifying student risk
+                    patterns.
+                </p>
+                <div class="flex" style="gap: var(--space-md);">
+                    <div>
+                        <h4 style="color: var(--text-primary);">Role</h4>
+                        <p style="color: var(--text-secondary);">Data Analyst</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary);">Skills</h4>
+                        <p style="color: var(--text-secondary);">Data analysis, data cleaning, cohort comparison,
+                            Tableau, Excel</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="analysis-section">
-                <h3>4. Share (Tableau)</h3>
-                <p>I built a multi-part Tableau story, with dashboards structured around:</p>
-                <ul>
-                    <li>Overview: depression rate and gender breakdown</li>
-                    <li>Academic Load: pressure, hours, satisfaction</li>
-                    <li>Mental Risk Factors: suicidal thoughts, family history</li>
-                    <li>Sleep & Diet: behavioral variables</li>
-                    <li>City View: mapped depression rates by location</li>
-                    <li>Gender Comparison: focused gender analysis</li>
-                </ul>
-                <p>Design was centered on clarity and comparability. Every visualization includes contextual labels and consistent formatting.</p>
-            </div>
-
-            <div class="analysis-section">
-                <h3>5. Conclusion</h3>
-                <p>The data shows that student depression is a consistent response to a specific set of pressures. Students who report being depressed are not doing less — they are doing more: studying longer, reporting higher academic pressure, and yet feeling less satisfied. The average difference in study time exceeds 1.5 hours per day, and pressure scores are 54% higher. At the same time, satisfaction drops noticeably, indicating that effort is not translating into positive academic experience.</p>
-                
-                <p>This imbalance is not just emotional — it becomes behavioral. Sleep patterns are disrupted in both directions, with depressed students much more likely to fall outside the stable 6–8 hour range. Psychological strain is reflected in hard numbers: half of depressed students report suicidal thoughts, nearly four times the rate in the non-depressed group.</p>
-                
-                <p>No significant differences were found by gender, but city-level variation reached up to 15 percentage points, which suggests that environmental and institutional context play a larger role than individual characteristics.</p>
-                
-                <p>Overall, the analysis confirms that depression in students is a structural outcome, not a random or isolated condition. The consistency of these patterns across thousands of responses shows exactly where risk accumulates and where attention should be focused. The data does not just describe the problem — it defines its shape.</p>
-            </div>
-
-            <div class="project-technologies">
-                <h3>Technologies Used</h3>
-                <div class="tags">
-                    <span>Excel</span>
-                    <span>Tableau</span>
-                    <span>Data Analysis</span>
-                    <span>Data Visualization</span>
+            <!-- Key Insights Grid -->
+            <h2 class="section-title" style="font-size: 2rem; text-align: left; left: 0; transform: none;">Key Insights
+            </h2>
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: var(--space-xl);">
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-venus-mars"
+                        style="font-size: 2rem; color: var(--accent-coral); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Gender Disparity</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Significant differences in depression
+                        prevalence observed between gender groups.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-briefcase"
+                        style="font-size: 2rem; color: var(--accent-blue); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Employment Impact</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Correlation found between employment
+                        status and reported depression levels.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-graduation-cap"
+                        style="font-size: 2rem; color: var(--accent-teal); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Education Factor</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Higher education levels showed a complex
+                        relationship with mental health outcomes.</p>
                 </div>
             </div>
 
-            <a href="../pages/projects.html" class="back-link">← Back to Projects</a>
-        </section>
+            <!-- Detailed Analysis -->
+            <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+
+                <section>
+                    <h2 style="margin-bottom: var(--space-md);">Analysis Visualizations</h2>
+                    <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+                        <!-- Visualization 1 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/work_study_hours.png" alt="Work & Study Hours Impact"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Work & Study Hours Impact</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    This chart explores the correlation between the number of hours spent working or
+                                    studying and reported depression levels. It helps identify potential burnout
+                                    thresholds and the importance of work-life balance for student mental health.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            While time management is crucial, other factors also play a significant role. The following
+                            pivot table provides a multi-dimensional view of how various demographic and academic
+                            factors interact.
+                        </p>
+
+                        <!-- Visualization 2 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/pivot_table.png" alt="Demographic Factors Analysis"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Demographic Factors Analysis</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    A comprehensive breakdown of depression rates across different demographics,
+                                    including age, gender, and academic year. This detailed view allows for the
+                                    identification of specific high-risk groups that may require targeted support.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Beyond academic and demographic factors, lifestyle choices significantly influence mental
+                            well-being. The next visualization highlights the critical role of sleep duration.
+                        </p>
+
+                        <!-- Visualization 3 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/sleep_duration.png" alt="Sleep Duration"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Sleep Duration Impact</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">Correlation between average
+                                    sleep duration and depression severity.</p>
+                            </div>
+                        </div>
+
+                        <!-- Visualization 4 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/work_study_hours.png" alt="Work & Study Hours"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Work & Study Hours</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">Analysis of how work and
+                                    study balance affects mental health.</p>
+                            </div>
+                        </div>
+
+                        <!-- Visualization 5 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/pivot_table.png" alt="Data Pivot Analysis"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Data Pivot Analysis</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">Detailed pivot table
+                                    breakdown of key metrics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="text-align: center; margin-top: var(--space-lg);">
+                    <a href="https://public.tableau.com/app/profile/liudmila.dolontaeva/viz/DepressionDataAnalysis/Story1"
+                        target="_blank" class="btn btn-primary">
+                        View Interactive Tableau Dashboard <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
-    <footer>
-        <p>© 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>

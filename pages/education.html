@@ -1,156 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - Ludmila Dolontaeva</title>
+    <title>Education | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="
-    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>LD</h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html">Projects</a>
-                <a href="../pages/education.html" class="active">Education</a>
-                <a href="../pages/contact.html">Contact</a>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="education.html" class="nav-link active">Education</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Education & Background</h2>
-            <p>Building a strong foundation in business analytics and international relations</p>
-        </section>
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="education.html" class="nav-link active">Education</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
 
-        <section>
-            <div class="education-card">
-                <div class="education-header">
-                    <h3>Bachelor of Business Administration (BBA) in International Relations</h3>
-                    <h4>The Russian Presidential Academy of National Economy and Public Administration (RANEPA)</h4>
-                    <p class="date">January 2018 - January 2022 | GPA: 3.7</p>
+    <main class="container" style="padding-top: 120px; padding-bottom: var(--space-2xl);">
+        <h1 class="section-title" style="margin-bottom: var(--space-xl);">Education</h1>
+
+        <!-- Education Section -->
+        <div style="max-width: 800px; margin: 0 auto var(--space-2xl);">
+            <div class="glass-card" style="position: relative; padding-left: var(--space-xl);">
+                <!-- Timeline Line -->
+                <div
+                    style="position: absolute; left: 2rem; top: 2rem; bottom: 2rem; width: 2px; background: rgba(0,0,0,0.1);">
                 </div>
 
-                <div class="education-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">3.7</div>
-                        <div class="stat-label">GPA</div>
+                <!-- Education Item 1 -->
+                <div style="position: relative;">
+                    <div
+                        style="position: absolute; left: -2.4rem; top: 0; width: 1rem; height: 1rem; background: var(--accent-blue); border-radius: 50%; box-shadow: 0 0 10px var(--accent-blue);">
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Years of Study</div>
+                    <div class="flex-between" style="align-items: flex-start; margin-bottom: 0.5rem;">
+                        <div>
+                            <h3 style="font-size: 1.5rem; color: var(--text-primary);">BSc in Business Administration
+                            </h3>
+                            <p style="color: var(--accent-blue); font-weight: 500;">RANEPA, GPA 3.9</p>
+                        </div>
+                        <span style="color: var(--text-secondary); font-size: 0.9rem;">2018 - 2022</span>
                     </div>
-                </div>
-
-                <div class="education-details">
-                    <div class="detail-section">
-                        <h5>Key Achievements & Skills</h5>
-                        <ul>
-                            <li>Developed strong analytical skills through coursework in international business, economics, and strategic management</li>
-                            <li>Gained expertise in data analysis and business intelligence tools through specialized courses</li>
-                            <li>Enhanced cross-cultural communication skills through international relations studies</li>
-                            <li>Proficient in French language, enabling effective communication in international business contexts</li>
-                        </ul>
-                    </div>
-
-                    <div class="detail-section">
-                        <h5>Leadership Experience</h5>
-                        <ul>
-                            <li>Active member of the Student Council, demonstrating leadership and organizational skills</li>
-                            <li>Successfully organized and managed multiple university events, showcasing project management abilities</li>
-                            <li>Developed strong interpersonal and team management skills through student government involvement</li>
-                        </ul>
-                    </div>
+                    <p style="color: var(--text-secondary);">Background in Business Administration and International
+                        Relations with focus on global economics, finance, and policy. Knowledge of strategic
+                        management, international trade, digital business practices, and applied data analysis.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="certificates-section">
-            <h2>Professional Certificates</h2>
-            <p class="section-subtitle">Continuous learning and skill development in data analytics and business intelligence</p>
-            
-            <div class="certificates-grid">
-                <div class="certificate-card">
-                    <div class="certificate-image" onclick="window.open('../assets/images/linkedin.pdf', '_blank')">
-                        <img src="../assets/images/linkedin.png" alt="LinkedIn Learning Certificate" loading="lazy">
-                        <div class="zoom-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Professional Certificate</h3>
-                            <p class="certificate-provider">Professional Development</p>
-                            <p class="certificate-date">2024</p>
-                        </div>
-                    </div>
-                    <div class="certificate-skills">
-                        <span>Professional Development</span>
-                        <span>Business Skills</span>
-                    </div>
-                </div>
+        <!-- Certifications Section -->
+        <h2 class="section-title" style="margin-top: var(--space-2xl);">Certifications</h2>
+        <div class="grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); max-width: 1000px; margin: 0 auto;">
 
-                <div class="certificate-card">
-                    <div class="certificate-image" onclick="window.open('../assets/images/excel.pdf', '_blank')">
-                        <img src="../assets/images/excel.png" alt="Excel Proficiency Certificate" loading="lazy">
-                        <div class="zoom-overlay">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fas fa-file-excel"></i>
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Excel Certificate</h3>
-                            <p class="certificate-provider">Professional Development</p>
-                            <p class="certificate-date">2024</p>
-                        </div>
-                    </div>
-                    <div class="certificate-skills">
-                        <span>Excel</span>
-                        <span>Data Analysis</span>
-                        <span>Spreadsheets</span>
-                    </div>
+            <!-- Certificate 1 -->
+            <div class="glass-card" style="text-align: center;">
+                <div
+                    style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-md); background: #f8fafc; border-radius: 8px; padding: 1rem;">
+                    <img src="../assets/images/excel.png" alt="Excel Certificate"
+                        style="max-height: 100%; width: auto;">
                 </div>
-
-                <div class="certificate-card">
-                    <div class="certificate-image" onclick="openModal('../assets/images/sql.png')">
-                        <img src="../assets/images/sql.png" alt="Database Certificate" loading="lazy">
-                        <div class="zoom-overlay">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                    </div>
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="certificate-info">
-                            <h3>Database Certificate</h3>
-                            <p class="certificate-provider">Professional Development</p>
-                            <p class="certificate-date">2024</p>
-                        </div>
-                    </div>
-                    <div class="certificate-skills">
-                        <span>SQL</span>
-                        <span>Database</span>
-                        <span>Data Querying</span>
-                    </div>
-                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Excel Expert</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Advanced Excel for Data Analysis</p>
             </div>
-        </section>
+
+            <!-- Certificate 2 -->
+            <div class="glass-card" style="text-align: center;">
+                <div
+                    style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-md); background: #f8fafc; border-radius: 8px; padding: 1rem;">
+                    <img src="../assets/images/sql.png" alt="SQL Certificate" style="max-height: 100%; width: auto;">
+                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">SQL Fundamentals</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Database Management & Querying</p>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="glass-card" style="text-align: center;">
+                <div
+                    style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-md); background: #f8fafc; border-radius: 8px; padding: 1rem;">
+                    <img src="../assets/images/linkedin.png" alt="LinkedIn Learning"
+                        style="max-height: 100%; width: auto;">
+                </div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Data Analysis</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">LinkedIn Learning Path</p>
+            </div>
+
+        </div>
+
 
     </main>
 
-    <footer>
-        <p>© 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>

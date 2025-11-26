@@ -1,359 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Threats Analysis - Ludmila Dolontaeva</title>
+    <title>Cybersecurity Threats | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1><a href="index.html" style="text-decoration: none; color: inherit;">LD</a></h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html">Projects</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/contact.html">Contact</a>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+            <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+            <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
     <main>
-        <section class="hero">
-            <h2>Cybersecurity Threats Analysis 2015–2024</h2>
-            <p>Comprehensive analysis of global cyberattack trends, patterns, and defense mechanisms</p>
+        <!-- Project Hero -->
+        <section class="hero" style="min-height: 60vh; align-items: center;">
+            <div class="container">
+                <div class="hero-content" style="max-width: 800px;">
+                    <a href="../pages/projects.html"
+                        style="color: var(--accent-teal); display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: var(--space-md);">
+                        <i class="fas fa-arrow-left"></i> Back to Projects
+                    </a>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Cybersecurity Threats</h1>
+                    <p class="hero-subtitle">Performed multi-dimensional analysis of global cyberattack data to detect
+                        long-term threat trends, financial exposure, and vulnerability-attack pairings.</p>
+
+                    <div class="flex" style="gap: var(--space-sm); margin-top: var(--space-md);">
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(45, 212, 191, 0.1); color: var(--accent-teal); border-radius: 50px; border: 1px solid rgba(45, 212, 191, 0.2);">Python</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 50px; border: 1px solid rgba(168, 85, 247, 0.2);">Pandas</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); border-radius: 50px; border: 1px solid rgba(59, 130, 246, 0.2);">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="project-details">
-            <div class="project-overview">
-                <h3>Goal</h3>
-                <p>Identify key trends, risks, and patterns in global cyberattacks from 2015 to 2024.</p>
-                
-                <h4>Main Research Questions</h4>
-                <ul>
-                    <li>Which attack types are increasing over time?</li>
-                    <li>Which industries lose the most money?</li>
-                    <li>What sources are behind the attacks?</li>
-                    <li>Which defense methods reduce resolution time?</li>
-                    <li>Which countries are most frequently linked to cyberattacks?</li>
-                </ul>
-            </div>
+        <div class="container" style="padding-bottom: var(--space-2xl);">
 
-            <div class="analysis-section">
-                <h3>Attack Type Overview</h3>
-                <div class="insight-card">
-                    <ul>
-                        <li><strong>Phishing:</strong> Deceptive emails trick users into revealing credentials.</li>
-                        <li><strong>Ransomware:</strong> Encrypts systems and demands payment for restoration.</li>
-                        <li><strong>DDoS:</strong> Overloads systems with traffic, causing service outages.</li>
-                        <li><strong>Man-in-the-Middle:</strong> Intercepts communication between users and systems.</li>
-                        <li><strong>Credential Stuffing:</strong> Reuses leaked passwords to access accounts.</li>
-                        <li><strong>Insider Threat:</strong> Employees or contractors misuse access.</li>
-                    </ul>
-                </div>
-                
-                <p><strong>Dataset Structure:</strong> Each row represents a single attack event.</p>
-                <ul>
-                    <li><strong>Country:</strong> the country where the incident occurred</li>
-                    <li><strong>Year:</strong> the year when the attack took place</li>
-                    <li><strong>Attack Type:</strong> the method used by the attackers</li>
-                    <li><strong>Target Industry:</strong> the sector targeted (healthcare, banking, government, etc.)</li>
-                    <li><strong>Financial Loss (in Million $):</strong> the estimated financial damage</li>
-                    <li><strong>Number of Affected Users:</strong> the number of individuals impacted</li>
-                    <li><strong>Attack Source:</strong> the origin (nation-state, hacker group, insider, unknown)</li>
-                    <li><strong>Security Vulnerability Type:</strong> the exploited weakness</li>
-                    <li><strong>Defense Mechanism Used:</strong> the protection in place during the attack</li>
-                    <li><strong>Incident Resolution Time (in Hours):</strong> response and resolution duration</li>
-                </ul>
-                
-                <p><strong>Data Source:</strong> <a href="https://www.kaggle.com/datasets/atharvasoundankar/global-cybersecurity-threats-2015-2024" target="_blank">Kaggle - Global Cybersecurity Threats 2015-2024</a></p>
-            </div>
-
-            <div class="analysis-section">
-                <h3>Part 1: Attack Type Trends</h3>
-                
-                <h4>1.1 Attack Volume Analysis</h4>
-                <img src="../assets/images/cybersecurity/attack_trends_overview.png" alt="Attack Trends Overview" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Cyberattacks peaked in 2017 (320) and again in 2022 (318), indicating a likely 5-year escalation cycle. In 2024, incidents dropped slightly to 299, but the overall threat level remains consistently high.</p>
-                    <p><strong>Action:</strong> Prepare for cyclical surges (next likely in 2027). Deploy scalable, elastic security infrastructure that can ramp up in pre-peak years.</p>
-                </div>
-                
-                <h4>1.2 Attack Type Distribution</h4>
-                <img src="../assets/images/cybersecurity/attack_frequency.png" alt="Attack Type Frequency" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> DDoS (17.7%) and Phishing (17.6%) dominate the threat landscape, jointly responsible for over 35% of attacks. SQL Injection follows closely at 16.8%, indicating a broadly distributed threat profile across technical attack vectors.</p>
-                    <p><strong>Action:</strong> Ensure multi-layered protection across all major attack types. Prioritize DDoS mitigation infrastructure and phishing filters equally.</p>
-                </div>
-                
-                <h4>1.3 Top Attack Types Trend</h4>
-                <img src="../assets/images/cybersecurity/top_attack_types_trend.png" alt="Top Attack Types Trend" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> DDoS leads attack frequency (17.7%), followed closely by Phishing (17.6%) and SQL Injection (16.8%). The trend shows consistent high-volume attacks across all three vectors, with peaks in 2017 (319 attacks) and 2022 (318 attacks).</p>
-                    <p><strong>Action:</strong> Focus on the top three attack vectors equally. Deploy robust DDoS protection, comprehensive phishing defenses, and SQL injection prevention through input validation and parameterized queries.</p>
-                </div>
-                
-                <h4>1.4 Attack Type Distribution by Industry</h4>
-                <img src="../assets/images/cybersecurity/attack_by_industry.png" alt="Attack by Industry" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Different industries show varying attack type preferences. Some sectors face concentrated attacks from specific vectors, while others experience more balanced threat distributions across multiple attack types.</p>
-                    <p><strong>Action:</strong> Customize industry-specific defense strategies based on attack type patterns. Focus resources on the attack vectors most relevant to each sector.</p>
-                </div>
-                
-                <h4>1.5 Growth Rate of Attack Types (2015–2024)</h4>
-                <img src="../assets/images/cybersecurity/attack_growth_rate.png" alt="Attack Growth Rate" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack type growth rates vary significantly, with some showing dramatic increases while others decline or remain stable. Emerging attack vectors show the highest growth rates, while traditional methods may be plateauing.</p>
-                    <p><strong>Action:</strong> Shift security investments toward rapidly growing attack types. Maintain baseline defenses for stable threats while increasing focus on emerging vectors.</p>
+            <!-- Overview Card -->
+            <div class="glass-card" style="margin-bottom: var(--space-xl);">
+                <h2 style="margin-bottom: var(--space-sm);">Project Overview</h2>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">
+                    Collected, cleaned, and structured a large cybersecurity dataset, handled missing values, normalized
+                    categories, and prepared data for analysis. Used Pandas and NumPy for grouping, aggregation, and
+                    trend calculations across attack types, industries, and countries. Built custom visualizations in
+                    Matplotlib and Seaborn (time series plots, heatmaps, dual-axis charts, bar distributions) to explore
+                    attack dynamics and financial impact.
+                </p>
+                <div class="flex" style="gap: var(--space-md);">
+                    <div>
+                        <h4 style="color: var(--text-primary);">Role</h4>
+                        <p style="color: var(--text-secondary);">Data Analyst</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary);">Skills</h4>
+                        <p style="color: var(--text-secondary);">Python (pandas, NumPy, matplotlib, seaborn)</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="analysis-section">
-                <h3>Part 2: Financial Impact Analysis</h3>
-                
-                <h4>2.1 Global Loss Trends</h4>
-                <img src="../assets/images/cybersecurity/financial_loss_trends.png" alt="Financial Loss Trends" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Total cyberattack losses grew from $14.51B in 2015 to $15.43B in 2024, an increase of 6.4%. However, growth was inconsistent with fluctuations: -9.6% in 2018, +18% in 2020, -5% in 2022.</p>
-                    <p><strong>Action:</strong> Target consistency in containment rather than reacting to loss spikes. Use trend volatility as a metric for operational maturity.</p>
+            <!-- Key Insights Grid -->
+            <h2 class="section-title" style="font-size: 2rem; text-align: left; left: 0; transform: none;">Threat
+                Landscape</h2>
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: var(--space-xl);">
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-bug"
+                        style="font-size: 2rem; color: var(--accent-coral); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Malware Spikes</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Identified seasonal spikes in malware
+                        attacks correlated with major events.</p>
                 </div>
-                
-                <h4>2.2 Industry Impact</h4>
-                <img src="../assets/images/cybersecurity/industry_financial_loss.png" alt="Industry Financial Loss" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Despite similar attack volumes across sectors, IT and banking incurred significantly higher financial losses — over 15% above the next group of industries. The narrow spread between most industries suggests that no sector is immune.</p>
-                    <p><strong>Action:</strong> Reframe security prioritization: move from industry stereotypes to evidence-based loss data. Allocate protection budgets proportionally to observed financial exposure.</p>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-user-secret"
+                        style="font-size: 2rem; color: var(--accent-purple); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Phishing Trends</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Analysis of phishing sophistication and
+                        success rates over time.</p>
                 </div>
-                
-                <h4>2.1a Financial Loss by Year and Attack Type</h4>
-                <img src="../assets/images/cybersecurity/financial_loss_by_type_area.png" alt="Financial Loss by Attack Type Area Chart" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Financial loss composition by attack type shows how different vectors contribute to total damage over time. Some attack types show increasing financial impact while maintaining stable incident counts.</p>
-                    <p><strong>Action:</strong> Monitor financial impact trends separately from incident frequency. Allocate loss prevention resources based on financial damage patterns, not just attack volume.</p>
-                </div>
-                
-                <h4>2.2 Attack Count vs Financial Impact</h4>
-                <img src="../assets/images/cybersecurity/attack_count_vs_loss.png" alt="Attack Count vs Loss by Industry" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Industries with high attack counts don't always show proportionally high financial losses. Some sectors experience fewer but more damaging incidents, while others face high-volume, lower-impact attacks.</p>
-                    <p><strong>Action:</strong> Develop industry-specific incident response strategies. High-volume sectors need efficient triage, while high-impact sectors require intensive damage containment capabilities.</p>
-                </div>
-                
-                <h4>2.3 Loss Distribution Analysis</h4>
-                <img src="../assets/images/cybersecurity/loss_distribution_by_industry.png" alt="Loss Distribution by Industry" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Financial loss distributions vary significantly across industries, with some showing high variability (many small incidents, few large ones) while others show more consistent loss patterns.</p>
-                    <p><strong>Action:</strong> Customize financial risk management approaches based on industry loss distribution patterns. High-variability sectors need catastrophic loss insurance.</p>
-                </div>
-                
-                <h4>2.4 Loss Distribution by Attack Type</h4>
-                <img src="../assets/images/cybersecurity/loss_distribution_violin.png" alt="Loss Distribution Violin Plot" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack types show distinct financial loss distribution patterns. Some consistently cause moderate damage, while others have high variability with potential for extreme losses.</p>
-                    <p><strong>Action:</strong> Implement attack-type-specific financial risk controls. Focus catastrophic loss prevention on high-variability attack types.</p>
-                </div>
-                
-                <h4>2.5 User Impact vs Financial Loss</h4>
-                <img src="../assets/images/cybersecurity/users_vs_loss_bubble.png" alt="Users vs Loss Bubble Chart" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> The relationship between affected users and financial loss varies by attack type. Some attacks cause high financial damage with relatively few affected users, while others impact many users with lower per-user costs.</p>
-                    <p><strong>Action:</strong> Balance user protection and financial protection strategies based on attack type characteristics. Some threats require user-focused defenses, others need financial controls.</p>
-                </div>
-                
-                <h4>2.6 Average Loss by Attack Type</h4>
-                <img src="../assets/images/cybersecurity/avg_loss_by_attack_type.png" alt="Average Loss by Attack Type" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Although phishing is often viewed as low-level noise, it now causes average losses on par with DDoS and man-in-the-middle attacks, all concentrated between $50.5M and $52.0M per incident.</p>
-                    <p><strong>Action:</strong> Avoid ranking threats based on perceived complexity. Ensure uniform containment protocols across all entry types.</p>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-network-wired"
+                        style="font-size: 2rem; color: var(--accent-blue); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">DDoS Patterns</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Mapping of DDoS attack sources and
+                        target industries.</p>
                 </div>
             </div>
 
-            <div class="analysis-section">
-                <h3>Part 3: Attack Sources & Industry Impact</h3>
-                
-                <h4>3.1 Attack Source Distribution</h4>
-                <img src="../assets/images/cybersecurity/attack_source_distribution.png" alt="Attack Source Distribution" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack sources are evenly split, each ranging from 23% to 30% over 10 years. No source clearly leads, indicating weak attribution and a need to treat all threat origins as equally likely.</p>
-                    <p><strong>Action:</strong> Build source-neutral defenses. Focus on broad threat coverage instead of targeting specific actors.</p>
+            <!-- Detailed Analysis -->
+            <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+
+                <section>
+                    <h2 style="margin-bottom: var(--space-md);">Analysis Visualizations</h2>
+                    <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+                        <!-- Visualization 1 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/cybersecurity/attack_trends_overview.png"
+                                alt="Global Attack Trends" style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Global Attack Trends</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    This chart illustrates the frequency of cyber attacks over the analyzed period,
+                                    highlighting key spikes and general trends. Understanding these temporal patterns is
+                                    crucial for predicting future threat levels.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Beyond just the number of attacks, it's vital to understand their economic impact. The
+                            following visualization tracks the financial losses associated with these incidents.
+                        </p>
+
+                        <!-- Visualization 2 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/cybersecurity/financial_loss_trends.png"
+                                alt="Financial Impact Analysis" style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Financial Impact Analysis</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    A detailed look at the monetary consequences of cyber threats. This analysis helps
+                                    organizations quantify risk and justify investments in security infrastructure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Different sectors face varying levels of risk. The next chart breaks down financial losses
+                            by industry, identifying which sectors are most vulnerable to high-cost attacks.
+                        </p>
+
+                        <!-- Visualization 3 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/cybersecurity/industry_financial_loss.png"
+                                alt="Sector Vulnerability" style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Sector Vulnerability</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    This breakdown reveals which industries suffer the greatest financial losses,
+                                    enabling sector-specific risk mitigation strategies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Knowing <em>how</em> attacks happen is as important as knowing <em>who</em> they target. The
+                            distribution below categorizes the most common types of vulnerabilities exploited.
+                        </p>
+
+                        <!-- Visualization 4 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/cybersecurity/vulnerability_types_distribution.png"
+                                alt="Attack Vectors" style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Attack Vectors</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    An analysis of the most prevalent attack methods and vulnerability types, providing
+                                    insights into where security defenses should be strengthened.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin: 0 auto; max-width: 800px;">
+                            Finally, cyber threats are a global phenomenon, but their intensity varies by region. This
+                            map highlights the countries that experience the highest frequency of attacks.
+                        </p>
+
+                        <!-- Visualization 5 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/cybersecurity/countries_attack_frequency.png"
+                                alt="Geographic Hotspots" style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4 style="margin-bottom: 0.5rem;">Geographic Hotspots</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    A geographic distribution of cyber attacks, identifying the countries most
+                                    frequently targeted and helping to understand the geopolitical landscape of cyber
+                                    warfare.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="text-align: center; margin-top: var(--space-lg);">
+                    <a href="https://github.com/dolludaa/Global-Cybersecurity-Threats-2015-2024/blob/main/business_analysis.ipynb"
+                        target="_blank" class="btn btn-primary">
+                        View Analysis on GitHub <i class="fab fa-github"></i>
+                    </a>
                 </div>
-                
-                <h4>3.2 Attack Source Trends Over Time</h4>
-                <img src="../assets/images/cybersecurity/attack_source_trends.png" alt="Attack Source Trends Over Time" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack source composition shows cyclical patterns with nation-state activity peaking in certain years. Hacker group activity remains consistently high, while insider threats show seasonal variations.</p>
-                    <p><strong>Action:</strong> Develop dynamic threat intelligence that adapts to cyclical nation-state campaigns. Maintain consistent defenses against hacker groups year-round.</p>
-                </div>
-                
-                <h4>3.3 Top Targeted Industries</h4>
-                <img src="../assets/images/cybersecurity/top_industries_share.png" alt="Top Industries by Attack Share" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> IT sector leads with the highest attack share, followed by Banking and Healthcare. These three industries account for a disproportionate share of cyberattacks due to their high-value data and digital infrastructure.</p>
-                    <p><strong>Action:</strong> IT, Banking, and Healthcare sectors should receive priority in national cybersecurity frameworks. Implement sector-specific threat sharing programs.</p>
-                </div>
-                
-                <h4>3.4 Industry-Specific Attack Sources</h4>
-                <img src="../assets/images/cybersecurity/industry_attack_sources.png" alt="Industry Attack Sources Breakdown" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Different industries face distinct threat actor profiles. Banking sees more nation-state activity, IT faces diverse threats, while Healthcare has higher insider threat rates.</p>
-                    <p><strong>Action:</strong> Customize threat detection and response strategies based on industry-specific threat actor patterns. Healthcare should focus on insider threat programs.</p>
-                </div>
-                
-                <h4>3.5 Attack Source Distribution by Industry</h4>
-                <img src="../assets/images/cybersecurity/industry_source_distribution.png" alt="Industry Source Distribution" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack source distribution varies significantly across industries. Some sectors are primarily targeted by external threats, while others face balanced threat landscapes including insider risks.</p>
-                    <p><strong>Action:</strong> Industry-specific defense strategies should reflect the unique threat actor mix each sector faces. Balance external and internal security controls accordingly.</p>
-                </div>
+
             </div>
 
-            <div class="analysis-section">
-                <h3>Part 4: Vulnerabilities & Defense Mechanisms</h3>
-                
-                <h4>4.1 Vulnerability Distribution & Growth</h4>
-                <img src="../assets/images/cybersecurity/vulnerability_types_distribution.png" alt="Vulnerability Types Distribution" class="insight-image" loading="lazy">
-                <img src="../assets/images/cybersecurity/vulnerability_growth.png" alt="Vulnerability Growth Analysis" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Zero-day exploits lead in volume (785 incidents, 26.2%) but show negative growth. Weak Passwords grew significantly, while Social Engineering and Unpatched Software show moderate growth patterns.</p>
-                    <p><strong>Action:</strong> Maintain strong zero-day defenses due to high volume. Prioritize password security improvements and MFA deployment to counter growing weak password exploitation.</p>
-                </div>
-                
-                <h4>4.2 Current Year Vulnerability Landscape</h4>
-                <img src="../assets/images/cybersecurity/vulnerability_2024.png" alt="Vulnerability Types 2024" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> The 2024 vulnerability landscape shows continued dominance of traditional attack vectors, with some vulnerabilities showing above-average attack rates compared to historical patterns.</p>
-                    <p><strong>Action:</strong> Focus on vulnerabilities showing above-average activity rates. Adjust security priorities based on current year trends rather than historical averages.</p>
-                </div>
-                
-                <h4>4.3 Attack Frequency vs Resolution Time</h4>
-                <img src="../assets/images/cybersecurity/resolution_time_by_vulnerability.png" alt="Resolution Time by Vulnerability" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> High-frequency vulnerabilities don't always correlate with faster resolution times. Some common attack vectors still require extended resolution periods, indicating process inefficiencies.</p>
-                    <p><strong>Action:</strong> Optimize incident response procedures for high-frequency vulnerabilities. Implement automated response capabilities for the most common attack types.</p>
-                </div>
-                
-                <h4>4.4 Vulnerability Usage by Attack Type</h4>
-                <img src="../assets/images/cybersecurity/vulnerability_usage.png" alt="Vulnerability Usage by Attack Type" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Different attack types exploit different vulnerability patterns. Some attack vectors show strong preferences for specific vulnerability types, while others are more opportunistic.</p>
-                    <p><strong>Action:</strong> Tailor vulnerability management programs based on the attack types most relevant to your threat model. Prioritize patching based on attack-vulnerability correlations.</p>
-                </div>
-                
-                <h4>4.5 Attack Sources and Vulnerabilities</h4>
-                <img src="../assets/images/cybersecurity/source_vulnerability_distribution.png" alt="Source Vulnerability Distribution" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Different attack sources show preferences for specific vulnerability types. Nation-state actors and hacker groups exploit different vulnerability classes, indicating varying capabilities and objectives.</p>
-                    <p><strong>Action:</strong> Align vulnerability management with threat intelligence about likely attack sources. Focus on vulnerabilities preferred by the most relevant threat actors for your organization.</p>
-                </div>
-                
-                <h4>4.6 User Impact Trends</h4>
-                <img src="../assets/images/cybersecurity/affected_users_trend.png" alt="Affected Users Trend" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> User impact from different vulnerability types shows varying trends over time. Some vulnerabilities affect increasingly larger user populations, while others remain more targeted.</p>
-                    <p><strong>Action:</strong> Prioritize vulnerabilities showing increasing user impact trends. Implement user-centric risk assessment in vulnerability management processes.</p>
-                </div>
-                
-                <h4>4.7 Defense Effectiveness Analysis</h4>
-                <img src="../assets/images/cybersecurity/defense_effectiveness.png" alt="Defense Effectiveness Analysis" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Defense mechanism effectiveness varies significantly by attack type. Some defenses show strong performance against specific attacks but may be less effective against others.</p>
-                    <p><strong>Action:</strong> Implement layered defense strategies rather than relying on single mechanisms. Match defense tools to the specific attack types they handle most effectively.</p>
-                </div>
-            </div>
-
-            <div class="analysis-section">
-                <h3>Part 5: Geographic Patterns</h3>
-                
-                <h4>5.1 Country Analysis</h4>
-                <img src="../assets/images/cybersecurity/countries_attack_frequency.png" alt="Countries Attack Frequency" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> UK leads with 10.7% of attacks, followed by Brazil (10.3%) and India (10.3%). The USA ranks 9th with 9.6%. The top 3 countries account for over 30% of global attacks, showing a more distributed geographic pattern than expected.</p>
-                    <p><strong>Action:</strong> Focus intelligence and monitoring resources on UK, Brazil, and India as primary threat origins. Develop region-specific threat intelligence partnerships.</p>
-                </div>
-                
-                <h4>5.2 Geographic Trends</h4>
-                <img src="../assets/images/cybersecurity/countries_yearly_share.png" alt="Countries Yearly Share" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Country attack shares remain relatively stable over time, with gradual shifts rather than dramatic changes. This indicates persistent threat actor infrastructure and capabilities by geography.</p>
-                    <p><strong>Action:</strong> Plan long-term geographic threat monitoring strategies based on stable country patterns rather than reactive approaches.</p>
-                </div>
-                
-                <h4>5.3 Attack Type Patterns by Country</h4>
-                <img src="../assets/images/cybersecurity/countries_attack_types.png" alt="Countries Attack Types Distribution" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Different countries show distinct attack type preferences. Some nations focus heavily on specific attack vectors (>40% concentration), while others maintain balanced attack portfolios across all types.</p>
-                    <p><strong>Action:</strong> Customize defense strategies by geographic threat patterns. Deploy specialized countermeasures for countries with dominant attack methods.</p>
-                </div>
-                
-                <h4>5.4 Attack Source Geography</h4>
-                <img src="../assets/images/cybersecurity/countries_source_donuts.png" alt="Countries Attack Sources" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Attack source composition varies significantly by country. Some regions show higher nation-state activity, others are dominated by hacker groups or have high unknown attribution rates.</p>
-                    <p><strong>Action:</strong> Tailor attribution and response efforts based on country-specific threat actor ecosystems. Invest more in attribution capabilities for regions with high "unknown" rates.</p>
-                </div>
-                
-                <h4>5.5 Geographic Attack Trends</h4>
-                <img src="../assets/images/cybersecurity/countries_yearly_trend.png" alt="Countries Yearly Trend" class="insight-image" loading="lazy">
-                <div class="insight-card">
-                    <p><strong>Insight:</strong> Top attack-origin countries show varying temporal patterns. Some maintain consistent attack volumes, while others show cyclical or emerging threat patterns over the 10-year period.</p>
-                    <p><strong>Action:</strong> Develop country-specific threat forecasting models based on historical patterns. Allocate monitoring resources dynamically based on predicted country threat cycles.</p>
-                </div>
-            </div>
-
-            <div class="analysis-section">
-                <h3>Key Conclusions</h3>
-                
-                <div class="insight-card">
-                    <h4>Overall Findings</h4>
-                    <ul>
-                        <li>Cyber risk is no longer limited to certain industries or attack types</li>
-                        <li>Phishing grew the fastest (30%+) and financial losses became almost equal across all sectors</li>
-                        <li>What matters most is the vulnerability being exploited, not where or how the attack happens</li>
-                        <li>Weak passwords, zero-day exploits, social engineering, and unpatched software are the main entry points</li>
-                    </ul>
-                </div>
-                
-                <div class="insight-card">
-                    <h4>Strategic Recommendations</h4>
-                    <ul>
-                        <li><strong>Strengthen password security</strong> with MFA, regular rotation, and strict complexity rules</li>
-                        <li><strong>Implement continuous patch management</strong> to close unpatched software gaps quickly</li>
-                        <li><strong>Maintain 24/7 monitoring</strong> and rapid response for zero-day exploits</li>
-                        <li><strong>Deploy advanced phishing protection,</strong> including AI-based email filtering and user training</li>
-                        <li><strong>Build DDoS mitigation capacity</strong> that can scale during peak attack periods</li>
-                        <li><strong>Use unified incident response processes</strong> that work for all attack types and sources</li>
-                        <li><strong>Track vulnerability trends</strong> and adjust security priorities at least quarterly</li>
-                        <li><strong>Share threat intelligence</strong> across industries to detect and block cross-sector campaigns early</li>
-                    </ul>
-                </div>
-                
-                <p><strong>Final Insight:</strong> Cyber risk today is global, repeating in cycles, and equally dangerous for everyone. To reduce future losses, especially before the expected 2027 surge, organizations must focus on fixing core weaknesses, reacting faster, and keeping defenses ready for all major threats.</p>
-            </div>
-
-            <div class="project-technologies">
-                <h3>Technologies & Methods Used</h3>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Matplotlib</span>
-                    <span>Seaborn</span>
-                    <span>NumPy</span>
-                    <span>Data Visualization</span>
-                    <span>Statistical Analysis</span>
-                    <span>Cybersecurity</span>
-                    <span>Threat Intelligence</span>
-                    <span>Risk Assessment</span>
-                </div>
-            </div>
-
-            <a href="../pages/projects.html" class="back-link">← Back to Projects</a>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>

@@ -1,114 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ludmila Dolontaeva</title>
+    <title>Contact | Ludmila Dolontaeva</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="analytics-decoration"></div>
-    <div class="analytics-decoration-2"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page-specific styles for form */
+        .form-group {
+            margin-bottom: var(--space-md);
+            position: relative;
+        }
 
-    <header>
-        <nav>
-            <h1>LD</h1>
-            <div class="nav-links">
-                <a href="../pages/projects.html">Projects</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/contact.html" class="active">Contact</a>
-            </div>
-        </nav>
+        .form-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-teal);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.1);
+        }
+
+        .form-label {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: var(--text-secondary);
+            pointer-events: none;
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus~.form-label,
+        .form-input:not(:placeholder-shown)~.form-label {
+            top: -0.75rem;
+            left: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--accent-teal);
+            background: var(--bg-darker);
+            padding: 0 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="education.html" class="nav-link">Education</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Get in Touch</h2>
-            <p>Let's discuss how we can work together to achieve your business goals</p>
-        </section>
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+    </div>
 
-        <section class="contact-section">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:dolontaeva00@gmail.com">dolontaeva00@gmail.com</a></p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:+14253262813">+1 (425) 326-2813</a></p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Toronto, ON</p>
+    <main class="container"
+        style="padding-top: 120px; padding-bottom: var(--space-2xl); min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+
+        <div style="text-align: center; max-width: 700px; margin: 0 auto var(--space-xl);">
+            <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: var(--space-sm);">Let's <span
+                    class="text-gradient">Connect</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem;">
+                Have a project in mind or want to discuss data analytics? I'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-xl); align-items: start;">
+
+            <!-- Contact Info -->
+            <div class="glass-card" style="height: 100%;">
+                <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Contact Information</h2>
+                <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <div class="flex" style="gap: var(--space-sm);">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(13, 148, 136, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-teal);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--text-secondary);">Email</h3>
+                            <a href="mailto:dolontaeva00@gmail.com"
+                                style="color: var(--text-primary); font-weight: 500;">dolontaeva00@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex" style="gap: var(--space-sm);">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(124, 58, 237, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-purple);">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--text-secondary);">Phone</h3>
+                            <p style="color: var(--text-primary); font-weight: 500;">+1 437 299 5607</p>
+                        </div>
+                    </div>
+                    <div class="flex" style="gap: var(--space-sm);">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(219, 39, 119, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-coral);">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--text-secondary);">Location</h3>
+                            <p style="color: var(--text-primary); font-weight: 500;">Toronto, ON</p>
+                        </div>
+                    </div>
+                    <div class="flex" style="gap: var(--space-sm);">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(37, 99, 235, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-blue);">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--text-secondary);">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/liudmiladolontaeva" target="_blank"
+                                style="color: var(--text-primary); font-weight: 500;">liudmiladolontaeva</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/xzzgolao" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <input type="hidden" name="_subject" value="New message from portfolio website">
-                <input type="hidden" name="_next" value="https://dolludaa.github.io/miladolontaeva/contact.html?sent=true">
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
+            <!-- Contact Form -->
+            <div class="glass-card">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-input" rows="5" placeholder=" "
+                            required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
     </main>
 
-    <footer>
-        <p>© 2024 Ludmila Dolontaeva. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="https://www.linkedin.com/in/liudmiladolontaeva" target="_blank"
+                    style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="mailto:dolontaeva00@gmail.com" style="color: var(--text-secondary); font-size: 1.2rem;"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        // Check if form was submitted successfully
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('sent') === 'true') {
-            // Show success message
-            const successMessage = document.createElement('div');
-            successMessage.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: #4CAF50;
-                color: white;
-                padding: 15px 20px;
-                border-radius: 8px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-                z-index: 1000;
-                font-family: Inter, sans-serif;
-                font-weight: 500;
-            `;
-            successMessage.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-            document.body.appendChild(successMessage);
-            
-            // Remove success message after 5 seconds
-            setTimeout(() => {
-                successMessage.remove();
-                // Clean URL
-                window.history.replaceState({}, document.title, window.location.pathname);
-            }, 5000);
-        }
-        
-        // Add form submission feedback
-        const form = document.querySelector('.contact-form');
-        const submitBtn = document.querySelector('.submit-btn');
-        
-        form.addEventListener('submit', function() {
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-        });
-    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>
