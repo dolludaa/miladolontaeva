@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Tips Analysis | Ludmila Dolontaeva</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="flex-between">
+                <div class="logo">
+                    <a href="../index.html">LD<span style="color: var(--accent-teal);">.</span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+                    <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../pages/projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="../pages/experience.html" class="nav-link">Experience</a></li>
+            <li><a href="../pages/education.html" class="nav-link">Education</a></li>
+            <li><a href="../pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="hero" style="min-height: 60vh; align-items: center;">
+            <div class="container">
+                <div class="hero-content" style="max-width: 800px;">
+                    <a href="../pages/projects.html"
+                        style="color: var(--accent-teal); display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: var(--space-md);">
+                        <i class="fas fa-arrow-left"></i> Back to Projects
+                    </a>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Restaurant Tips Analysis</h1>
+                    <p class="hero-subtitle">Analyzing tipping trends based on time, party size, and bill amount to
+                        understand diner behavior.</p>
+
+                    <div class="flex" style="gap: var(--space-sm); margin-top: var(--space-md);">
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 50px; border: 1px solid rgba(168, 85, 247, 0.2);">Tableau</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(45, 212, 191, 0.1); color: var(--accent-teal); border-radius: 50px; border: 1px solid rgba(45, 212, 191, 0.2);">Excel</span>
+                        <span
+                            style="padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); border-radius: 50px; border: 1px solid rgba(59, 130, 246, 0.2);">Data
+                            Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="padding-bottom: var(--space-2xl);">
+
+            <!-- Overview Card -->
+            <div class="glass-card" style="margin-bottom: var(--space-xl);">
+                <h2 style="margin-bottom: var(--space-sm);">Project Overview</h2>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">
+                    Analyzed a dataset of 244 restaurant transactions to uncover patterns in tipping behavior. The goal
+                    was to identify which factors—such as day of the week, time of day, and party size—most
+                    significantly influence tip percentages. Data cleaning was performed in Excel to ensure accuracy
+                    before visualizing the insights in Tableau.
+                </p>
+                <div class="flex" style="gap: var(--space-md);">
+                    <div>
+                        <h4 style="color: var(--text-primary);">Role</h4>
+                        <p style="color: var(--text-secondary);">Business Analyst</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary);">Skills</h4>
+                        <p style="color: var(--text-secondary);">Tableau, Excel, Data Cleaning, Dashboard Design</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Insights Grid -->
+            <h2 class="section-title" style="font-size: 2rem; text-align: left; left: 0; transform: none;">Key Findings
+            </h2>
+            <div class="grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-bottom: var(--space-xl);">
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-percent"
+                        style="font-size: 2rem; color: var(--accent-teal); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">16% Average Tip</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">The overall average tip across all
+                        transactions hovers around 16%.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-calendar-day"
+                        style="font-size: 2rem; color: var(--accent-purple); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Friday Lunch Peak</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Friday lunch service delivers the
+                        strongest tipping performance compared to other times.</p>
+                </div>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-users"
+                        style="font-size: 2rem; color: var(--accent-coral); margin-bottom: var(--space-sm);"></i>
+                    <h3 style="font-size: 1.2rem;">Small Groups Pay More</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Smaller groups, particularly solo
+                        diners, tend to leave higher tip percentages.</p>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+
+                <section>
+                    <h2 style="margin-bottom: var(--space-md);">Dashboard Visualization</h2>
+                    <div class="grid" style="grid-template-columns: 1fr; gap: var(--space-xl);">
+                        <!-- Visualization 1 -->
+                        <div class="glass-card" style="padding: 0; overflow: hidden;">
+                            <img src="../assets/images/restaurant_tips_dashboard.png"
+                                alt="Restaurant Tips Analysis Dashboard"
+                                style="width: 100%; height: auto; display: block;">
+                            <div style="padding: var(--space-md);">
+                                <h4
+                                    style="margin-bottom: 0.5rem; min-height: 3rem; display: flex; align-items: center;">
+                                    Restaurant Tips Analysis Dashboard</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    A comprehensive view of tipping metrics, including tip % by party size, day/time
+                                    analysis, and the correlation between total bill and tip amount.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Ludmila Dolontaeva. All rights reserved.</p>
+            <div class="flex-center" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-secondary); font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
