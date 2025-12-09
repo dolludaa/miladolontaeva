@@ -6,29 +6,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap');
 
 :root {
-    /* Color Palette - Light Theme Default */
-    --bg-primary: #f8fafc;
+    /* Color Palette - Calm Professional Theme */
+    --bg-primary: #fafaf9;
+    /* Stone 50 - Warmer, softer background */
     --bg-secondary: #ffffff;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --text-accent: #0d9488;
+    --text-primary: #44403c;
+    /* Stone 700 - Softer than pure black */
+    --text-secondary: #78716c;
+    /* Stone 500 */
+    --text-accent: #57a099;
+    /* Muted Teal */
 
-    /* Accent Colors */
-    --accent-teal: #0d9488;
-    --accent-coral: #db2777;
-    --accent-purple: #7c3aed;
-    --accent-blue: #2563eb;
+    /* Accent Colors - Muted/Earthy */
+    --accent-teal: #57a099;
+    /* Muted Teal */
+    --accent-coral: #dba6a6;
+    /* Dusty Rose */
+    --accent-purple: #94a3b8;
+    /* Slate Blue/Grey */
+    --accent-blue: #64748b;
+    /* Slate */
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--accent-teal), var(--accent-blue));
-    --gradient-glow: radial-gradient(circle at center, rgba(13, 148, 136, 0.15) 0%, transparent 70%);
+    /* Gradients - Subtle */
+    --gradient-primary: linear-gradient(135deg, #57a099, #64748b);
+    --gradient-glow: radial-gradient(circle at center, rgba(87, 160, 153, 0.1) 0%, transparent 70%);
 
-    /* Glassmorphism - Light */
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.5);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    /* Glassmorphism - Clean & Minimal */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: 1px solid rgba(0, 0, 0, 0.05);
+    --glass-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     --card-bg: #ffffff;
-    --nav-bg: rgba(255, 255, 255, 0.8);
+    --nav-bg: rgba(250, 250, 249, 0.9);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -43,12 +51,11 @@
     --space-2xl: 6rem;
 
     /* Glassmorphism Utilities */
-    --backdrop-blur: blur(12px);
+    --backdrop-blur: blur(8px);
 
     /* Animation */
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 html {
@@ -100,14 +107,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
-    background-image:
-        radial-gradient(circle at 15% 50%, rgba(124, 58, 237, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 30%, rgba(13, 148, 136, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
-        linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 50px 50px, 50px 50px;
-    background-attachment: fixed;
+    /* Removed complex neon gradients for a clean look */
+    background-image: none;
 }
 
 a {
@@ -139,10 +140,8 @@ h6 {
 }
 
 .text-gradient {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent-teal);
+    /* Removed gradient text for cleaner look */
 }
 
 .section-title {
@@ -165,7 +164,7 @@ h6 {
     height: 4px;
     background: var(--accent-teal);
     border-radius: 2px;
-    box-shadow: 0 0 10px var(--accent-teal);
+    /* Removed neon glow */
 }
 
 /* Layout Utilities */
@@ -214,9 +213,9 @@ h6 {
 
 .glass-card:hover {
     border-color: var(--card-hover-color, var(--accent-teal));
-    transform: translateY(-8px) scale(1.01);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08),
-        0 0 20px rgba(13, 148, 136, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05),
+        0 0 15px rgba(87, 160, 153, 0.1);
 }
 
 /* Buttons */
@@ -236,14 +235,16 @@ h6 {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--accent-teal);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+    box-shadow: 0 4px 10px rgba(87, 160, 153, 0.2);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(13, 148, 136, 0.4);
+    transform: translateY(-2px);
+    background: #4d8f89;
+    /* Slightly darker teal */
+    box-shadow: 0 6px 15px rgba(87, 160, 153, 0.3);
 }
 
 .btn-outline {
@@ -599,8 +600,7 @@ h6 {
 }
 
 .timeline-item:nth-child(4n+4) {
-    --item-color: #3b82f6;
-    /* Blue */
+    --item-color: var(--accent-blue);
 }
 
 .timeline-marker {
